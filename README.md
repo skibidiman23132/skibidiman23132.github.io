@@ -1,3 +1,6 @@
+<link rel="shortcut icon" type="image/png" 
+      href="{{ "/assets/favicon.png"  | absolute_url }}">
+
 # Hi<br>
 # The links to the sites are here ↓
 <br><br>
