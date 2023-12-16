@@ -4,7 +4,7 @@ ________________________________________________________________________________
 <br><br>
 # **OWNERS**
 <br>
-- **Cookie Clicker**
+- **Cookie** **Clicker**
     - [Dashnet & Orteil](https://orteil.dashnet.org/) 
 
 - **Wallpaper**
