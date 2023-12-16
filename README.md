@@ -5,7 +5,7 @@ ________________________________________________________________________________
 # **OWNERS**
 <br>
 - **Cookie Clicker**
-<br>![Cookie Clicker Logo Steam Store](https://upload.wikimedia.org/wikipedia/en/0/06/Cookie_Clicker_logo.png)
+[Cookie Clicker Logo Steam Store](https://upload.wikimedia.org/wikipedia/en/0/06/Cookie_Clicker_logo.png)
   -[Dashnet & Orteil](https://orteil.dashnet.org/) 
 - 
 - 
