@@ -1,12 +1,11 @@
 > # **Hi**
-<br><br>
+<br>
 _______________________________________________________________________________________________________________
 <br><br>
 # **OWNERS**
 <br>
 - **Cookie Clicker**
-[Cookie Clicker Logo Steam Store](https://upload.wikimedia.org/wikipedia/en/0/06/Cookie_Clicker_logo.png)
-  -[Dashnet & Orteil](https://orteil.dashnet.org/) 
+    -[Dashnet & Orteil](https://orteil.dashnet.org/) 
 - 
 - 
 - 
