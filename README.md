@@ -10,5 +10,6 @@ ________________________________________________________________________________
         - [justplay.lol](https://www.justplay.lol/)
 - **Space Company**
         - [sparticle999](https://github.com/sparticle999)
+- **Im sorry but im too lazy too add anymore. Sorry**
 - **Wallpaper**
-        - [Space wallpaper Bytecodeminer](https://gifs.alphacoders.com/gifs/view/215837)
+        - [Space wallpaper](https://giphy.com/gifs/stars-pleiades-serpentspells-1jXAh9RJME0LZoBFRp)
