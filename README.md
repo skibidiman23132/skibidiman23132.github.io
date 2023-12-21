@@ -1,4 +1,4 @@
-> # **Hi** [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnnintendoboi2.github.io%2Flettuce.pookie%2F&count_bg=%23A600FF&title_bg=%233D3D3D&icon=youtubegaming.svg&icon_color=%23A600FF&title=Viewers&edge_flat=false)](https://hits.seeyoufarm.com)
+> # **Hi** [[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnnintendoboi2.github.io%2Flettuce.pookie%2F&count_bg=%23A600FF&title_bg=%233D3D3D&icon=youtubegaming.svg&icon_color=%23A600FF&title=Viewers&edge_flat=false)](https://hits.seeyoufarm.com)](https://nintendoboi22.github.io/pancake.pookie.apple/)
 ![🥵](spicey.png)
 _______________________________________________________________________________________________________________
 
