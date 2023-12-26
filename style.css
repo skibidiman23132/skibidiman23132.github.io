@@ -4,3 +4,7 @@
   background-size: cover;
   overflow: hidden;
 }
+@font-face {
+  src: url(Merkur-j147.otf);
+  font-family: Merkur-j147;
+}
