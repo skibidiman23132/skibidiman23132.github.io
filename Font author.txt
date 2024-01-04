@@ -4,3 +4,7 @@ license: "OFL"
 category: "DISPLAY"
 date_added: "2023-11-23"
 https://github.com/google/fonts/blob/main/ofl/rubikdoodleshadow/
+filename: "RubikDoodleShadow-Regular.ttf"
+post_script_name: "RubikDoodleShadow-Regular"
+full_name: "Rubik Doodle Shadow Regular"
+copyright: "Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)
