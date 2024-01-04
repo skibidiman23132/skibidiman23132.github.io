@@ -4,16 +4,4 @@
   background-size: cover;
   overflow: hidden;
 }
-@font-face {
-  src: url(Merkur.ttf);
-  font-family: Merkur;
-}
-.paragraph{
-  font-family: Merkur;
-}
-.body{
-  font-family: Merkur;
-}
-.head{
-  font-family: Merkur;
-}
+font-family: 'Rubik Doodle Shadow', system-ui;
