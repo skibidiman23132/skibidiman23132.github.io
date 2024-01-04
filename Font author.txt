@@ -1,0 +1,6 @@
+name: "Rubik Doodle Shadow"
+designer: "NaN, Luke Prowse"
+license: "OFL"
+category: "DISPLAY"
+date_added: "2023-11-23"
+https://github.com/google/fonts/blob/main/ofl/rubikdoodleshadow/
