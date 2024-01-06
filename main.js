@@ -1,2 +1,2 @@
-alert("I will not be updating the website for a while. movies yes, but main website updates are a no as im adding the login page :D")
+alert("press ` :) (on the left of the 1 key)")
 document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
