@@ -3,4 +3,37 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lock
+{
+  display: none;
+
+}
+
+#loginblock{
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+@font-face {
+  src: url(Merkur-j147.otf);
+  font-family: Merkur-j147;
+}
+
+.paragraph{
+  font-family: Merkur-j147;
+}
+.body{
+  font-family: Merkur-j147;
+}
+.head{
+  font-family: Merkur-j147;
 }
