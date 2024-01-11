@@ -12,7 +12,7 @@ function unlockpage(){
         if (document.cookie=="login"){unlockpage();}
    // document.onkeypress = function (e) { if(e.key == "13") if (login.focus)};
     button.onclick=()=>{
-        if (user.value=="Admin"&& password.value=="chicken"){
+        if (user.value=="Student"&& password.value=="Lobster"){
           unlockpage();
             document.cookie="login";
     }
