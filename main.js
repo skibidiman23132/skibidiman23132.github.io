@@ -4,8 +4,8 @@ let password=document.getElementById("txt_pass")
 let button=document.getElementById("imdone")
 let login=document.getElementById("login")
 let maincontent =document. getElementById("content");
-alert(document.cookie);
-    function unlockpage(){
+
+function unlockpage(){
           maincontent.classList.remove("lock");
             login.classList.add("lock");
         }
