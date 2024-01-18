@@ -10,6 +10,10 @@ ________________________________________________________________________________
         - [justplay.lol](https://www.justplay.lol/)
 - **Space Company**
         - [sparticle999](https://github.com/sparticle999)
+- **Eaglecraft**
+        - [LAX1DUDE](https://github.com/lax1dude)
+  - **Minecraft**
+        - [Minecraft](https://minecraft.net/)
 - **Im sorry but im too lazy too add anymore**
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/lRzkQk)
