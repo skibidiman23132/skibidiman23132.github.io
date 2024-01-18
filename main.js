@@ -5,8 +5,11 @@ let button=document.getElementById("imdone")
 let login=document.getElementById("login")
 let maincontent =document. getElementById("content");
 
-// {username:"Student", pasword:"Lobster"}
-
+auth=[{username:"Student", password:"Lobster"},
+ {username:"Owner", password:"Frog"}];
+function checkpassword(username,password,auth){
+return auth.username==username && auth.password==password;
+};
 document.onkeypress = function (e) { if(e.key == "Enter" && login.focus){
   unlockpage();
 }};
@@ -17,10 +20,11 @@ function unlockpage(){
         }
         if (document.cookie=="login"){unlockpage();}
     button.onclick=()=>{
-        if (user.value=="Student"&& password.value=="Lobster"){
+      for (let i=0; i<auth.length; i++){
+        if (checkpassword(user.value,password.value,auth[i])){
           unlockpage();
             document.cookie="login";
-      
+      }
     }
 }
     
