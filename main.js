@@ -5,16 +5,22 @@ let button=document.getElementById("imdone")
 let login=document.getElementById("login")
 let maincontent =document. getElementById("content");
 
+{username:"Student", pasword:"Lobster"}
+
+document.onkeypress = function (e) { if(e.key == "Enter" && login.focus){
+  unlockpage();
+}};
+
 function unlockpage(){
           maincontent.classList.remove("lock");
             login.classList.add("lock");
         }
         if (document.cookie=="login"){unlockpage();}
-   // document.onkeypress = function (e) { if(e.key == "13") if (login.focus)};
     button.onclick=()=>{
         if (user.value=="Student"&& password.value=="Lobster"){
           unlockpage();
             document.cookie="login";
+      
     }
 }
     
