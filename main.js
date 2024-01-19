@@ -1,5 +1,4 @@
-document.onkeypress = function (e) { if(e.key == "192") window.location = "https://www.classroom.google.com/h" };
-document.onkeypress = function (e) { if(e.key == 192) window.location = "https://www.classroom.google.com/h" };
+document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
 
 let user=document.getElementById("txt_user")
 let password=document.getElementById("txt_pass")
@@ -25,7 +24,7 @@ function unlockpage(){
       for (let i=0; i<auth.length; i++){
         if (checkpassword(user.value,password.value,auth[i])){
           unlockpage();
-            document.cookie="login";
+document.cookie = "login; expires=Thu, 18 Dec 250 12:00:00 UTC";
       }
     }
 }
