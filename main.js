@@ -24,7 +24,7 @@ function unlockpage(){
       for (let i=0; i<auth.length; i++){
         if (checkpassword(user.value,password.value,auth[i])){
           unlockpage();
-document.cookie = "login; expires=Thu, 18 Dec 2050 12:00:00 UTC";
+            document.cookie="login";
       }
     }
 }
