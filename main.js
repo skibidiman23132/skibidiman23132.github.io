@@ -7,8 +7,13 @@ let login=document.getElementById("login")
 let maincontent =document. getElementById("content");
 
 let page_cookie={};
+try{
 page_cookie=JSON.parse(document.cookie);
-
+} catch(error){
+      console.error(error);
+      page_cookie.login=false;
+      document.cookie=JSON.parse(page_cookie);
+}
 auth=[{username:"Student", password:"Lobster"},
  {username:"Owner", password:"Frog"}];
 function checkpassword(username,password,auth){
