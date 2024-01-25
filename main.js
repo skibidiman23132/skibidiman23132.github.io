@@ -5,6 +5,9 @@ let button=document.getElementById("imdone")
 let login=document.getElementById("login")
 let maincontent =document. getElementById("content");
 
+let page_cookie={};
+page_cookie=JSON.parse(document.cookie);
+
 auth=[{username:"Student", password:"Lobster"},
  {username:"Owner", password:"Frog"}];
 function checkpassword(username,password,auth){
@@ -15,15 +18,16 @@ document.onkeypress = function (e) { if(e.key == "Enter" && login.focus){
 }};
 
 function unlockpage(){
-          maincontent.classList.remove("lock");
-            login.classList.add("lock");
+      page_cookie.login=true; 
+      document.cookie=JSON.stringify(page_cookie);
+      maincontent.classList.remove("lock");
+      login.classList.add("lock");
         }
-        if (document.cookie=="login"){unlockpage();}
-    button.onclick=()=>{
+if (page_cookie.login){unlockpage();}
+button.onclick=()=>{
       for (let i=0; i<auth.length; i++){
-        if (checkpassword(user.value,password.value,auth[i])){
+if (checkpassword(user.value,password.value,auth[i])){
           unlockpage();
-            document.cookie="login";
       }
     }
 }
