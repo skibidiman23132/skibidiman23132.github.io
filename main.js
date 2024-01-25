@@ -12,7 +12,7 @@ page_cookie=JSON.parse(document.cookie);
 } catch(error){
       console.error(error);
       page_cookie.login=false;
-      document.cookie=JSON.parse(page_cookie);
+      document.cookie=JSON.stringify(page_cookie);
 }
 auth=[{username:"Student", password:"Lobster"},
  {username:"Owner", password:"Frog"}];
