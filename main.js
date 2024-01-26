@@ -14,7 +14,7 @@ page_cookie=JSON.parse(document.cookie);
       page_cookie.login=false;
       document.cookie=JSON.stringify(page_cookie);
 }
-auth=[{username:"Student", password:"Lobster"},
+auth=[{username:"Pretzel", password:"Pookie"},
  {username:"Owner", password:"Frog"}];
 function checkpassword(username,password,auth){
 return auth.username==username && auth.password==password;
