@@ -55,24 +55,6 @@ a:active {
      <br>
      <h1 class="Title"><FONT COLOR="#ffffff">Welcome :D</h1>
   
-    <script>
-function getVote(int) {
-  var xmlhttp=new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("poll").innerHTML=this.responseText;
-    }
-  }
-  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
-  xmlhttp.send();
-}
-</script>
-    <div id="poll">
-<h3>Should I make Tab open google classroom instead of `/~ ?</h3>
-<form>
-Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
-No:  <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
-</form>
     </div>
    
     <a href="https://nintendoboi22.github.io/pancake.pookie.apple/share.html"> <img src="share.png" alt="Share" style="width:42px;height:42px;"></a>
@@ -96,6 +78,7 @@ No:  <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
   <p class="links"><a href="https://miners.vercel.app/index.html" target="_blank">Eaglecraft all versions (minecraft)</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.fnaf2.github.io" target="_blank">FNAF 2 (Modded)</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.fnaf2nohacks.github.io" target="_blank">FNAF 2</a></p>
+  <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.oh.flip.github.io" target="_blank">Oh, Flip (WARNING VERY ADDICTIVE)
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.time.shooter.2github.io" target="_blank">Time Shooter 2</a></p>
   <p hidden><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.fnaf3.github.io" target="_blank">FNAF 3</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.fs.github.io/" target="_blank">Funny Shooter 2 (crashes at round end)</a></p>
