@@ -1,4 +1,4 @@
-object.onkeydown = function (e) { if(e.key == 222) window.location = "https://www.classroom.google.com/h" };
+//object.onkeydown = function (e) { if(e.key == 222) window.location = "https://www.classroom.google.com/h" };
 
 let user=document.getElementById("txt_user")
 let password=document.getElementById("txt_pass")
