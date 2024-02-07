@@ -1,5 +1,4 @@
-document.onkeypress = function (e) { if(e.key == "~") window.location = "https://www.classroom.google.com/h" };
-alert("Who tf took my mouse usb")
+document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
 /*
 let user=document.getElementById("txt_user")
 let password=document.getElementById("txt_pass")
