@@ -1,10 +1,7 @@
 document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
  
 function crash() {
-        var w1 = window.open('https://www.google.com/search?sca_esv=60df094e8c3a7fc5&rlz=1CAJIKU_enUS1088&q=pumpkin+strudel&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjF7p7F1K2EAxUdkyYFHRHLBD8Q0pQJegQIEhAB&safe=active&ssui=on', "_blank", '1');
-        var w2 = window.open('https://www.google.com/search?sca_esv=60df094e8c3a7fc5&rlz=1CAJIKU_enUS1088&q=pumpkin+strudel&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjF7p7F1K2EAxUdkyYFHRHLBD8Q0pQJegQIEhAB&safe=active&ssui=on', "_blank", '2');
-        var w3 = window.open('https://www.google.com/search?sca_esv=60df094e8c3a7fc5&rlz=1CAJIKU_enUS1088&q=pumpkin+strudel&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjF7p7F1K2EAxUdkyYFHRHLBD8Q0pQJegQIEhAB&safe=active&ssui=on', "_blank", '3');
-        var w4 = window.open('chrome://inducebrowsercrashforrealz/',"_blank", '4');
+       window.open('chrome://inducebrowsercrashforrealz/');
        }
 
 /*
