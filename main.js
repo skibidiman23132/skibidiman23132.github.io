@@ -1,5 +1,9 @@
 document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
 
+document.querySelector('button').addEventListener('click', () => {
+  while (true) {}
+});
+
 /*
 let user=document.getElementById("txt_user")
 let password=document.getElementById("txt_pass")
