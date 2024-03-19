@@ -11,7 +11,7 @@ var says = [
   "Bot",
   "yes its open-source",
   "no you shouldnt skid it",
-  "IM NOT ADDING SKBITY TOLIET"
+  "IM NOT ADDING SKBITY TOLIET",
   "what do i add?",
   "*you're* 👆🤓",
   "optimized by ChatGPT",
