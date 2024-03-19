@@ -31,7 +31,7 @@ var says = [
   "hiiii sennon :)",
   "amog",
   "do we got pe or tech today",
-  "💀"
+  "💀",
 ];
 
 function splashText() {
