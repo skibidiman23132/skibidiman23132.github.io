@@ -10,7 +10,7 @@ var says = [
   "I like sleep",
   "Bot",
   "Fish Tacos",
-  "Now serving 32 games",
+  "Now serving thirty two games",
   "yes its open-source",
   "no you shouldnt skid it",
   "IM NOT ADDING SKBITY TOLIET",
