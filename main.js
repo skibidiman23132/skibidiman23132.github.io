@@ -6,6 +6,7 @@ document.querySelector('button').addEventListener('click', () => {
 
 var says = [
   "yes,i did steal this from railing",
+  "anyone got a thingamabob?",
   "Fight me(pls dont)",
   "Gilroy built like warden without the beard and glasses",
   "har har har har harhahrharhahrahrhhrahrhrhharh",
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .then((response) => response.json())
     .then((data) => {
       proxylocation = data.YourFuckingLocation;
-      says.push(`Sending missile to ${proxylocation}`);
+      says.push(`Sending missile to ${proxylocation}😈`);
       splashText();
     });
   
