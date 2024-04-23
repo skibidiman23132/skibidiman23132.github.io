@@ -9,23 +9,21 @@ var says = [
   "Fight me(pls dont)",
   "Gilroy built like warden without the beard and glasses",
   "har har har har harhahrharhahrahrhhrahrhrhharh",
-  "the solar eclipse made my eyes hurt",
   "I like sleep",
   "mb for not adding more games",
   "U a Bot",
   "Fish Tacos",
-  "Now serving thirty two games",
+  "Now serving thirty two ish games",
   "yes its open-source",
   "no you shouldnt skid it",
   "IM NOT ADDING SKBITY TOLIET",
   "what do i add?",
   "*you're* 👆🤓",
   "optimized by ChatGPT",
-  "Cooper thanks for loving this, i think!",
   "Theres a proxy i think",
   "TACOS",
   "whats up brothers",
-  "i need ads on this site cuz i need money 😮",
+  "i need ads on this site cuz i need money",
   "uh",
   "EERM",
   "Schools Pretty Boring",
@@ -57,11 +55,12 @@ function splashText() {
 
 document.addEventListener("DOMContentLoaded", (event) => {
   splashText();
-fetch("https://ipv4.wtfismyip.com/json")
+  
+  fetch("https://ipv4.wtfismyip.com/json")
     .then((response) => response.json())
     .then((data) => {
-      locatinn = data.YourFuckingLocation;
-      says.push(`Sending missile to ${locationn}`);
+      proxylocation = data.YourFuckingLocation;
+      says.push(`Sending missile to ${proxylocation}`);
       splashText();
     });
   
