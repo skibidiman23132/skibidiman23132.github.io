@@ -61,7 +61,7 @@ fetch("https://ipv4.wtfismyip.com/json")
     .then((response) => response.json())
     .then((data) => {
       locatinn = data.YourFuckingLocation;
-      says.push(`Sending missile to ${location}`);
+      says.push(`Sending missile to ${locationn}`);
       splashText();
     });
   
@@ -69,7 +69,7 @@ fetch("https://ipv4.wtfismyip.com/json")
     .then((response) => response.json())
     .then((data) => {
       ipAddress = data.YourFuckingIPAddress;
-      says.push(`umm your ip is: ${ipAddress}`);
+      says.push(`umm your ip is ${ipAddress}`);
       splashText();
     });
 });
