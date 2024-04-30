@@ -72,6 +72,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       says.push(`umm your ip is ${ipAddress}`);
       splashText();
     });
+  fetch("https://ipv4.wtfismyip.com/json")
+    .then((response) => response.json())
+    .then((data) => {
+      ipAddress = data.YourFuckingISP;
+      says.push(`nice isp, "${ipAddress}"`);
+      splashText();
+    });
 });
 
 
