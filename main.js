@@ -6,7 +6,6 @@ document.querySelector('button').addEventListener('click', () => {
 
 var says = [
   "yes,i did steal this from railing",
-  "anyone got a thingamabob?",
   "Fight me(pls dont)",
   "Gilroy built like warden without the beard and glasses",
   "har har har har harhahrharhahrahrhhrahrhrhharh",
