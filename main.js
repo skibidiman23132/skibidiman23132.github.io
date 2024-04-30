@@ -1,5 +1,11 @@
 document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
 document.onkeypress = function (e) { if (e.keyCode === 32) { splashText(); } };
+window.addEventListener('keydown', function(e) {
+  if(e.keyCode == 32 && e.target == document.body) {
+    e.preventDefault();
+  }
+});
+
 document.querySelector('button').addEventListener('click', () => {
   while (true) {}
 });
