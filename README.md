@@ -14,6 +14,7 @@ ________________________________________________________________________________
         - [LAX1DUDE](https://github.com/lax1dude)
   - **Minecraft**
         - [Minecraft](https://minecraft.net/)
-- **Im sorry but im too lazy too add anymore**
+- **Im sorry but im too lazy too add anymore credits :(**
+- pls dont sue me 🥺
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/lRzkQk)
