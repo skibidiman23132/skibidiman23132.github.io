@@ -7,6 +7,7 @@ document.querySelector('button').addEventListener('click', () => {
 
 var says = [
   "yes,i did steal this from railing",
+  "just bc i added gambling; if you have any problems with gambling, call 1-800-426-2537",
   "Fight me(pls dont)",
   "Gilroy built like warden without the beard and glasses",
   "har har har har harhahrharhahrahrhhrahrhrhharh",
