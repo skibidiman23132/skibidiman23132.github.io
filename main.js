@@ -7,7 +7,7 @@ document.querySelector('button').addEventListener('click', () => {
 
 var says = [
   "yes,i did steal this from railing",
-  "if you have a game that you have made and would like to add, email me(on my github profile)"
+  "if you have a game that you have made and would like to add, email me(in the requests page)"
   "just bc i added gambling; if you have any problems with gambling, call 1-800-426-2537",
   "Fight me(pls dont)",
   "Gilroy built like warden without the beard and glasses",
