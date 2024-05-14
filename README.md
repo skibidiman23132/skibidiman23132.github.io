@@ -3,7 +3,7 @@
 _______________________________________________________________________________________________________________
 
 # OWNERS
-- [**3KH0**](https://github.com/3kh0/)<- my lord and savior
+- [**3KH0**](https://github.com/3kh0/)⬅ INSPIRATION
 - **Cookie Clicker**
         - [Dashnet and Orteil](https://orteil.dashnet.org) 
 - **1v1 LOL**
