@@ -29,7 +29,7 @@ var says = [
   "Theres a proxy i think",
   "TACOS",
   "whats up brothers",
-  "i need ads on this site cuz i need money",
+  "soory bout the ads :(",
   "uh",
   "EERM",
   "Schools Pretty Boring",
