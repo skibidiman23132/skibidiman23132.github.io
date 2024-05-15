@@ -58,6 +58,29 @@ a:active {
   text-decoration: underline;
 }
 </style>
+    <script>
+// thank you bing ai(i dont answer questions)
+window.onload = function() {
+    var startTime = new Date();
+
+    // Update the time spent on the page every second
+    setInterval(function() {
+        var elapsedTime = new Date() - startTime;
+        // Calculate days, hours, minutes, and seconds
+        var seconds = Math.floor((elapsedTime / 1000) % 60);
+        var minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+        var hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+
+        // Display the time spent on the page
+        document.getElementById('time').textContent = 
+            (days > 0 ? days + " days, " : "") +
+            (hours > 0 ? hours + " hours, " : "") +
+            (minutes > 0 ? minutes + " minutes, " : "") +
+            seconds + " seconds";
+    }, 1000);
+};
+</script>
   </head> 
 <center>
   <!--
@@ -83,7 +106,7 @@ a:active {
 
     <h2 class="Title"><Font COLOR="#ffffff">🚨Announcements🚨<br></h2>
      <div class="Index-Container"> <div>
-        <h2 class="Title"><Font COLOR="#ffffff">Hi</h2>
+        <h2 class="Title"><Font COLOR="#ffffff">You've been on this site for <span id="time">0 seconds</span></h2>
             <p onclick="splashText()" class="Index-SplashText">Enable Javascript</p>
     </div> </div>
     <h2 class="Title">Updated once in a while</h2>
