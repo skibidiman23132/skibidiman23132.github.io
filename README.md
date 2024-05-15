@@ -17,4 +17,4 @@ ________________________________________________________________________________
 - **Im sorry but im too lazy too add anymore credits :(**
 - pls dont sue me 🥺
 - **Wallpaper**
-        - [Space wallpaper](https://www.artstation.com/artwork/lRzkQk)
+        - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
