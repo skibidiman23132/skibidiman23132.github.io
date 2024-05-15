@@ -16,5 +16,6 @@ ________________________________________________________________________________
         - [Minecraft](https://minecraft.net/)
 - **Im sorry but im too lazy too add anymore credits :(**
 - pls dont sue me 🥺
+- [DMCA :( ](https://nintendoboi22.github.io/DMCA.html)
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
