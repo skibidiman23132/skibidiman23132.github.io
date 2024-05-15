@@ -63,6 +63,11 @@ a:active {
 window.onload = function() {
     var startTime = new Date();
 
+    // Function to format the time unit with proper singular or plural
+    function formatTimeUnit(unit, label) {
+        return unit + " " + label + (unit === 1 ? "" : "s");
+    }
+
     // Update the time spent on the page every second
     setInterval(function() {
         var elapsedTime = new Date() - startTime;
@@ -74,10 +79,10 @@ window.onload = function() {
 
         // Display the time spent on the page
         document.getElementById('time').textContent = 
-            (days > 0 ? days + " days, " : "") +
-            (hours > 0 ? hours + " hours, " : "") +
-            (minutes > 0 ? minutes + " minutes, " : "") +
-            seconds + " seconds";
+            (days > 0 ? formatTimeUnit(days, "day") + ", " : "") +
+            (hours > 0 ? formatTimeUnit(hours, "hour") + ", " : "") +
+            (minutes > 0 ? formatTimeUnit(minutes, "minute") + ", " : "") +
+            formatTimeUnit(seconds, "second");
     }, 1000);
 };
 </script>
@@ -106,7 +111,7 @@ window.onload = function() {
 
     <h2 class="Title"><Font COLOR="#ffffff">🚨Announcements🚨<br></h2>
      <div class="Index-Container"> <div>
-        <h2 class="Title"><Font COLOR="#ffffff">You've been on this site for <span id="time">0 seconds</span></h2>
+        <h2 class="Title"><Font COLOR="#ffffff">You've been on my site for <span id="time">0 seconds</span></h2>
             <p onclick="splashText()" class="Index-SplashText">Enable Javascript</p>
     </div> </div>
     <h2 class="Title">Updated once in a while</h2>
