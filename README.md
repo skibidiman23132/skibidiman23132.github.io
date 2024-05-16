@@ -21,6 +21,6 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________
 - **Im sorry but im too lazy too add anymore credits :(**
 - pls dont sue me 🥺
-- [however, DMCA :( ](https://nintendoboi22.github.io/DMCA.html)
+- [however, **DMCA :(** ](https://nintendoboi22.github.io/DMCA.html)
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
