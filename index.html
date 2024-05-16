@@ -61,30 +61,31 @@ a:active {
     <script>
 // thank you bing ai(i dont answer questions)
 window.onload = function() {
-    var startTime = new Date();
+  // Check if the savedTime exists in localStorage and set it, otherwise start from 0
+  var savedTime = localStorage.getItem('savedTime') ? parseInt(localStorage.getItem('savedTime')) : 0;
 
-    // Function to format the time unit with proper singular or plural
-    function formatTimeUnit(unit, label) {
-        return unit + " " + label + (unit === 1 ? "" : "s");
-    }
-
-    // Update the time spent on the page every second
-    setInterval(function() {
-        var elapsedTime = new Date() - startTime;
-        // Calculate days, hours, minutes, and seconds
-        var seconds = Math.floor((elapsedTime / 1000) % 60);
-        var minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
-        var hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
-
-        // Display the time spent on the page
-        document.getElementById('time').textContent = 
-            (days > 0 ? formatTimeUnit(days, "day") + ", " : "") +
-            (hours > 0 ? formatTimeUnit(hours, "hour") + ", " : "") +
-            (minutes > 0 ? formatTimeUnit(minutes, "minute") + ", " : "") +
-            formatTimeUnit(seconds, "second");
-    }, 1000);
+  // Update the counter every second
+  setInterval(function() {
+    savedTime++;
+    localStorage.setItem('savedTime', savedTime);
+    document.getElementById('time-counter').textContent = formatTime(savedTime);
+  }, 1000);
 };
+
+// Function to format the time into a more readable format
+function formatTime(seconds) {
+  var hours = Math.floor(seconds / 3600);
+  var minutes = Math.floor((seconds % 3600) / 60);
+  seconds = seconds % 60;
+
+  // Add singular or plural time units
+  var hoursDisplay = hours > 0 ? hours + (hours === 1 ? ' hour ' : ' hours ') : '';
+  var minutesDisplay = minutes > 0 ? minutes + (minutes === 1 ? ' minute ' : ' minutes ') : '';
+  var secondsDisplay = seconds + (seconds === 1 ? ' second' : ' seconds');
+
+  return hoursDisplay + minutesDisplay + secondsDisplay;
+}
+
 </script>
   </head> 
 <center>
@@ -111,9 +112,10 @@ window.onload = function() {
 
     <h2 class="Title"><Font COLOR="#ffffff">🚨Announcements🚨<br></h2>
      <div class="Index-Container"> <div>
-        <h2 class="Title"><Font COLOR="#ffffff">You've been on my site for <span id="time">0 seconds</span></h2>
+        <h2 class="Title"><Font COLOR="#ffffff">You've been on my site for a total for<span id="time-counter"></span></h2>
             <p onclick="splashText()" class="Index-SplashText">Enable Javascript</p>
-    </div> </div><!-- ads :( | BUT I NEED $$$ -->
+    </div>
+   </div><!-- ads :( | BUT I NEED $$$ -->
 
     <h2 class="Title">Updated once in a while</h2> 
      <br>
@@ -153,6 +155,7 @@ window.onload = function() {
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.fnaf2nohacks.github.io" target="_blank">FNAF 2</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.RS2.github.io" target="_blank">Riddle School 2</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.pizza.github.io" target="_blank">Papa's Pizzeria</a></p>
+  <p class="links"><a href="https://nintendoboi22.github.io/Games/papas/freeze/index.html" target="_blank">Papa's Freezeria</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.g.snake.github.io" target="_blank">Google Snake</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.bitlife.github.io/index.html" target="_blank">Bitlife</a></p>
   <p class="links"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.sort.the.court.github.io" target="_blank">Sort the Court</a></p>
