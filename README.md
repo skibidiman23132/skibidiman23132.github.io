@@ -14,8 +14,13 @@ ________________________________________________________________________________
         - [LAX1DUDE](https://github.com/lax1dude)
   - **Minecraft**
         - [Minecraft](https://minecraft.net/)
+- **Burrito Bison**
+        - [Kongregate](http://www.kongregate.com/games/juicybeast/burrito-bison-launcha-libre)
+- **Papa games**
+        - [Flipline Studio](https://www.flipline.com/)
+_______________________________________________________________________________________________________________
 - **Im sorry but im too lazy too add anymore credits :(**
 - pls dont sue me 🥺
-- [DMCA :( ](https://nintendoboi22.github.io/DMCA.html)
+- [however, DMCA :( ](https://nintendoboi22.github.io/DMCA.html)
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
