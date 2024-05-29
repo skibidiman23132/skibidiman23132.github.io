@@ -9,6 +9,7 @@ var says = [
   "yes,i did steal this from railing",
   "should i add a wiki?",
   "hello australians",
+  "mersker mersker"
   "erm what the sigma",
   "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.",
   "press the enter key",
