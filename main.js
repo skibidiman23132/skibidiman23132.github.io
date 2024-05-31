@@ -24,7 +24,7 @@ var says = [
   "Fish Tacos",
   "Now serving thirty two ish games",
   "yes its open-source",
-  "no you shouldnt skid it",
+  "papas pizzaaaaaaaaaaaa",
   "IM NOT ADDING SKBITY TOLIET",
   "what do i add?",
   "*you're* 👆🤓",
