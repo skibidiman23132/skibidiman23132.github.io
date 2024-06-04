@@ -1,5 +1,6 @@
-document.onkeypress = function (e) { if(e.key == "`") window.location = "https://www.classroom.google.com/h" };
-document.onkeypress = function (e) { if (e.keyCode === 13) { splashText(); } };
+document.onkeydown = function (e) { if (e.key == "`") window.location = "https://www.classroom.google.com/h" };
+document.onkeydown = function (e) { if (e.keyCode === 13) { splashText(); } };
+document.onkeydown = function (e) { if (e.key == "80") { cheat(); } };
 
 document.querySelector('button').addEventListener('click', () => {
   while (true) {}
@@ -89,7 +90,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 });
 
-
+function cheat() {
+  var savedTime = parseInt(localStorage.getItem('savedTime'));
+  savedTime += 3600; // Add 3600 seconds to the savedTime
+  localStorage.setItem('savedTime', savedTime);
+  document.getElementById('time-counter').textContent = formatTime(savedTime);
+}
 /*
 let user=document.getElementById("txt_user")
 let password=document.getElementById("txt_pass")
