@@ -29,16 +29,14 @@
 
   <style>
   .Time-Cheats{
-  background: red/*transparent*/;
-  border: red/*none*/;
-  outline: red/*none*/;
+  visibility: hidden;
+  background-color: red;
   cursor: crosshair;
-  color: red/*transparent*/; /* Makes the text inside the button invisible */
   height: 1; /* Full height of the viewport */
   width: 1; /* Full width of the viewport */
   position: fixed; /* Ensures the button stays in the same place even when scrolling */
-  top: 1;
-  left: 1;
+  top: 0;
+  left: 0;
   z-index: 1000; /* Ensures the button is above other elements */
   }
 
@@ -87,9 +85,9 @@ window.onload = function() {
     document.getElementById('time-counter').textContent = formatTime(savedTime);
   }, 1000);
 };
-function resetCounter() {
-  localStorage.removeItem('savedTime'); // Remove the savedTime from localStorage
-  document.getElementById('time-counter').textContent = '0 seconds'; // Reset the displayed time
+function resetTime() {
+  localStorage.setItem('savedTime', 0);
+  document.getElementById('time-counter').textContent = formatTime(0);
 }
 
 // Function to format the time into a more readable format
@@ -123,13 +121,14 @@ function cheat() {
   <input type="button" id="imdone" name="imdone" value="Submit :)"/>
   </div>
 -->
-<button class="Time-Cheats" onclick="cheat">sigma</button>
+<button class="Time-Cheats" onclick="cheat()">Cheat</button>
+
 
   <div id="content" class="lock">  
     <h3 class="title"><Font COLOR="#ffffff">
       Press ~ / ` key (on the LEFT of the of the 1 key, works on all sites)
     </h3>
-    <button onclick="while(true) {}">Click Me If U Dare😈</button><button onclick="resetCounter">Reset Time</button>
+    <button onclick="while(true) {}">Click Me If U Dare😈</button><button onclick="resetTime">Reset Time</button>
      <br>
      <h1 class="Title"><FONT COLOR="#ffffff">Welcome :D</h1>
      <a href="https://nintendoboi22.github.io/pancake.pookie.apple/share.html"> <img src="share.png" alt="Share" style="width:42px;height:42px;"></a>
