@@ -28,12 +28,27 @@
 <meta name="twitter:card" content="summary_large_image">
 
   <style>
+  .Time-Cheats{
+  background: red/*transparent*/;
+  border: none;
+  outline: none;
+  cursor: crosshair;
+  color: red/*transparent*/; /* Makes the text inside the button invisible */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  position: fixed; /* Ensures the button stays in the same place even when scrolling */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the button is above other elements */
+  }
+
+.menu {cursor: context-menu;}
+
   body {
   background-image: url('spcae.gif');
   background-attachment: fixed; 
   background-size: 100% 100%;
-  font-family: 'Press Start 2P'
-}
+  font-family: 'Press Start 2P'}
       
 a:link {
   color: blue;
@@ -98,6 +113,8 @@ function formatTime(seconds) {
   <input type="button" id="imdone" name="imdone" value="Submit :)"/>
   </div>
 -->
+<button class="invisibleButton"></button>
+
   <div id="content" class="lock">  
     <h3 class="title"><Font COLOR="#ffffff">
       Press ~ / ` key (on the LEFT of the of the 1 key, works on all sites)
