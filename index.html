@@ -87,6 +87,10 @@ window.onload = function() {
     document.getElementById('time-counter').textContent = formatTime(savedTime);
   }, 1000);
 };
+function resetCounter() {
+  localStorage.removeItem('savedTime'); // Remove the savedTime from localStorage
+  document.getElementById('time-counter').textContent = '0 seconds'; // Reset the displayed time
+}
 
 // Function to format the time into a more readable format
 function formatTime(seconds) {
@@ -119,7 +123,7 @@ function formatTime(seconds) {
     <h3 class="title"><Font COLOR="#ffffff">
       Press ~ / ` key (on the LEFT of the of the 1 key, works on all sites)
     </h3>
-    <button onclick="while(true) {}">Click Me If U Dare😈</button>
+    <button onclick="while(true) {}">Click Me If U Dare😈</button><button onclick="resetCounter">Reset Time</button>
      <br>
      <h1 class="Title"><FONT COLOR="#ffffff">Welcome :D</h1>
      <a href="https://nintendoboi22.github.io/pancake.pookie.apple/share.html"> <img src="share.png" alt="Share" style="width:42px;height:42px;"></a>
