@@ -30,15 +30,15 @@
   <style>
   .Time-Cheats{
   background: red/*transparent*/;
-  border: none;
-  outline: none;
+  border: red/*none*/;
+  outline: red/*none*/;
   cursor: crosshair;
   color: red/*transparent*/; /* Makes the text inside the button invisible */
   height: 100vh; /* Full height of the viewport */
   width: 100vw; /* Full width of the viewport */
   position: fixed; /* Ensures the button stays in the same place even when scrolling */
-  top: 0;
-  left: 0;
+  top: 5;
+  left: 5;
   z-index: 1000; /* Ensures the button is above other elements */
   }
 
@@ -106,6 +106,12 @@ function formatTime(seconds) {
   return hoursDisplay + minutesDisplay + secondsDisplay;
 }
 
+function cheat() {
+  var savedTime = parseInt(localStorage.getItem('savedTime'));
+  savedTime += 3600; // Add 3600 seconds to the savedTime
+  localStorage.setItem('savedTime', savedTime);
+  document.getElementById('time-counter').textContent = formatTime(savedTime);
+}
 </script>
   </head> 
 <center>
@@ -117,7 +123,7 @@ function formatTime(seconds) {
   <input type="button" id="imdone" name="imdone" value="Submit :)"/>
   </div>
 -->
-<button class="invisibleButton">sigma</button>
+<button class="Time-Cheats" onclick="cheat">sigma</button>
 
   <div id="content" class="lock">  
     <h3 class="title"><Font COLOR="#ffffff">
