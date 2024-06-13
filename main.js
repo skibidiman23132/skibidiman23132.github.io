@@ -1,28 +1,28 @@
-var currentUrl = 'https://www.classroom.google.com/h';
+// var currentUrl = 'https://www.classroom.google.com/h';
 
-function showPopup() {
-  document.getElementById('skib').style.display = 'block';
-}
+// function showPopup() {
+//   document.getElementById('skib').style.display = 'block';
+// }
 
-function saveUrl() {
-  var newUrl = document.getElementById('newUrl').value;
-  if (newUrl) {
-    currentUrl = newUrl;
-    document.getElementById('popup').style.display = 'none';
-  } else {
-    alert('Please enter a valid URL, https://example.com/');
-  }
-}
+// function saveUrl() {
+//   var newUrl = document.getElementById('newUrl').value;
+//   if (newUrl) {
+//     currentUrl = newUrl;
+//     document.getElementById('popup').style.display = 'none';
+//   } else {
+//     alert('Please enter a valid URL, https://example.com/');
+//   }
+// }
 
-document.getElementById('changeRedirectBtn').addEventListener('click', showPopup);
+// document.getElementById('changeRedirectBtn').addEventListener('click', showPopup);
 
-document.getElementById('saveUrlBtn').addEventListener('click', saveUrl);
+// document.getElementById('saveUrlBtn').addEventListener('click', saveUrl);
 
-document.onkeydown = function (e) {
-  if (e.key === "`") {
-    window.open(currentUrl, '_blank');
-  }
-};
+// document.onkeydown = function (e) {
+//   if (e.key === "`") {
+//     window.open(currentUrl, '_blank');
+//   }
+// };
 
 
 
