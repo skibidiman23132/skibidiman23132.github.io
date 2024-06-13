@@ -1,7 +1,7 @@
 var currentUrl = 'https://www.classroom.google.com/h';
 
 function showPopup() {
-  document.getElementById('popup').style.display = 'block';
+  document.getElementById('skib').style.display = 'block';
 }
 
 function saveUrl() {
