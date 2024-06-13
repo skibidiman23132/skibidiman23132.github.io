@@ -1,8 +1,24 @@
+document.onkeydown = function (e) { if (e.keyCode === 13) { splashText(); } };
+
+var currentUrl = 'https://www.classroom.google.com/h';
+
+document.getElementById('changeRedirectBtn').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('saveUrlBtn').addEventListener('click', function() {
+  var newUrl = document.getElementById('newUrl').value;
+  if (newUrl) {
+    currentUrl = newUrl;
+    document.getElementById('popup').style.display = 'none';
+  } else {
+    alert('Please enter a valid URL.');
+  }
+});
+
 document.onkeydown = function (e) {
   if (e.key == "`") {
-    window.location = "https://www.classroom.google.com/h";
-  } else if (e.keyCode === 13) {
-    splashText();
+    window.location = currentUrl;
   }
 };
 
