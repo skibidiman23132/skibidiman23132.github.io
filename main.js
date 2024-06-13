@@ -1,6 +1,5 @@
 document.onkeypress = function (e) { if (e.key == "`") window.location = "https://www.classroom.google.com/h" };
 document.onkeypress = function (e) { if (e.keyCode === 13) { splashText(); } };
-document.onkeypress = function (e) { if (e.key == "80") { cheat(); } };
 
 document.querySelector('button').addEventListener('click', () => {
   while (true) {}
