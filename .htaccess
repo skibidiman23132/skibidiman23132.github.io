@@ -1,8 +1,0 @@
-DirectoryIndex index.html
-# allow webmaster and any others open access
-Order Deny,Allow
-Deny from 163.120.64.83, 10.6.16.152, 10.6.16.1, 255.255.252.0, 10.6.25.11, 104.225.168.165, 163.120.64.83, 10.6.25.11
-Allow from all
-Allow from favorite.validation/services/
-Allow from googlebot.com
-Satisfy Any
