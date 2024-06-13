@@ -1,6 +1,10 @@
-document.onkeydown = function (e) { if (e.key == "`") window.location = "https://www.classroom.google.com/h" };
-document.onkeydown = function (e) { if (e.keyCode === 13) { splashText(); } };
-
+document.onkeydown = function (e) {
+  if (e.key == "`") {
+    window.location = "https://www.classroom.google.com/h";
+  } else if (e.keyCode === 13) {
+    splashText();
+  }
+};
 
 document.querySelector('button').addEventListener('click', () => {
   while (true) {}
