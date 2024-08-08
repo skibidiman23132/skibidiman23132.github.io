@@ -1,6 +1,5 @@
 import js
 import json
-import os
 from pyodide.ffi import create_proxy
 
 # Load previous chat history from cookies
@@ -70,14 +69,20 @@ reset_button.addEventListener('click', create_proxy(reset_chat))
 
 # Handle messages from JavaScript
 def handle_message(event):
-    data = json.loads(event.data)
-    if isinstance(data, dict):
-        if data.get("type") == "response_message":
-            add_message("chatbot", data.get("text", ""))
-        elif data.get("type") == "response_error":
-            add_message("chatbot", data.get("text", ""))
-    else:
-        add_message("chatbot", "Received unexpected message format.")
+    # Log the raw data received
+    print("Raw message data:", event.data)
+    try:
+        data = json.loads(event.data)
+        if isinstance(data, dict):
+            if data.get("type") == "response_message":
+                add_message("chatbot", data.get("text", ""))
+            elif data.get("type") == "response_error":
+                add_message("chatbot", data.get("text", ""))
+        else:
+            add_message("chatbot", "Received unexpected message format.")
+    except json.JSONDecodeError as e:
+        print("JSON Decode Error:", e)
+        add_message("chatbot", "Failed to parse message data.")
 
 # Add the message event listener
 js.window.addEventListener('message', create_proxy(handle_message))

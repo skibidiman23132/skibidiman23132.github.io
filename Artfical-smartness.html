@@ -56,7 +56,7 @@
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",
-                messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}],
+                messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}]
             })
         });
 
@@ -76,7 +76,7 @@
         // Check if the expected property exists
         if (data.choices && data.choices[0] && data.choices[0].message) {
             const resultText = data.choices[0].message.content.trim();
-            // Call a JavaScript function to handle the response
+            // Send response to Python
             window.postMessage(JSON.stringify({ type: "response_message", text: resultText }));
         } else {
             console.error("Unexpected response structure:", data);
