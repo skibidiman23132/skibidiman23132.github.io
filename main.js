@@ -35,6 +35,8 @@ var says = [
   "yes,i did steal this from railing",
   "should i add a wiki?",
   "hello australians",
+  "parents aprove(trust)",
+  "artifcal smartness is fire trust",
   "mersker mersker",
   "papa louie better be paying me double for the amount of work im doing",
   "erm what the sigma",
