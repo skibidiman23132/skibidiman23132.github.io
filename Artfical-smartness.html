@@ -60,23 +60,17 @@
             })
         });
 
-        // Check if the response is okay
         if (!response.ok) {
             console.error(`HTTP error! Status: ${response.status}`);
             window.postMessage(JSON.stringify({ type: "response_error", text: `Error: ${response.statusText}` }));
             return;
         }
 
-        // Parse the JSON response
         const data = await response.json();
-
-        // Log the entire response for debugging purposes
         console.log(data);
 
-        // Check if the expected property exists
         if (data.choices && data.choices[0] && data.choices[0].message) {
             const resultText = data.choices[0].message.content.trim();
-            // Send response to Python
             window.postMessage(JSON.stringify({ type: "response_message", text: resultText }));
         } else {
             console.error("Unexpected response structure:", data);
