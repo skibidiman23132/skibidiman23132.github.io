@@ -66,16 +66,21 @@ reset_button.addEventListener('click', create_proxy(reset_chat))
 def handle_message(event):
     print("Raw message data:", event.data)
     try:
-        data = json.loads(event.data)
-        if isinstance(data, dict):
-            if data.get("type") == "response_message":
-                add_message("chatbot", data.get("text", ""))
-            elif data.get("type") == "response_error":
-                add_message("chatbot", data.get("text", ""))
+        # Check if the data is a string
+        if isinstance(event.data, str):
+            # Attempt to parse the data
+            data = json.loads(event.data)
+            if isinstance(data, dict):
+                if data.get("type") == "response_message":
+                    add_message("chatbot", data.get("text", ""))
+                elif data.get("type") == "response_error":
+                    add_message("chatbot", data.get("text", ""))
+                else:
+                    add_message("chatbot", "Received unexpected message type.")
             else:
-                add_message("chatbot", "Received unexpected message type.")
+                add_message("chatbot", "Received unexpected message format.")
         else:
-            add_message("chatbot", "Received unexpected message format.")
+            add_message("chatbot", "Received non-string message data.")
     except json.JSONDecodeError as e:
         print("JSON Decode Error:", e)
         add_message("chatbot", "Failed to parse message data.")
