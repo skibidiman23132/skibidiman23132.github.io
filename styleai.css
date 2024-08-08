@@ -68,18 +68,21 @@ mpy-config,mpy-script,py-config,py-script {
 /* Adds a spinner animation to the elements with the classes mpy-editor-run-button and py-editor-run-button when they are disabled, creating a rotating circle with a specified appearance */
 .mpy-editor-run-button:disabled:before,
 /*py-editor-run-button:disabled:before*/
-.center {
-   animation: spinner .6s linear infinite;
-   background-color: #fff;
-   border: 2px solid #aaa;
-   border-radius: 25px;
-   border-top-color: #242522;
-   box-sizing: border-box;
-   content: "";
-   height: 20px;
-   left: 100%;
-   margin: auto;
-   position: absolute;
-   top: 100%;
-   width: 20px;
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
 }
