@@ -1,6 +1,11 @@
+import os
 import js
 import json
 from pyodide.ffi import create_proxy
+
+# Set the API key and expose it to JavaScript
+openai_api_key = os.getenv("CHAT_GBT_API")
+js.pyodide.globals.set("openai_api_key", openai_api_key)
 
 # Load previous chat history from cookies
 def load_chat_history():
