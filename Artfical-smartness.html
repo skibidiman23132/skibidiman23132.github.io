@@ -24,18 +24,6 @@
                 background-size: 100% 100%;
                 font-family: 'Press Start 2P';
             }
-            #chat-container {
-                width: 600px;
-                margin: 0 auto;
-                background-blend-mode:hue;
-            }
-            #chat-log {
-                border: 1px solid #20C20E;
-                height: 300px;
-                overflow-y: auto;
-                padding: 10px;
-                margin-bottom: 10px;
-            }
             #user-input {
                 width: calc(100% - 110px);
                 padding: 10px;
@@ -59,24 +47,45 @@
             async function fetch_response(inputText, apiKey) {
     const url = "https://api.openai.com/v1/chat/completions";
     
-    const response = await fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${apiKey}`
-        },
-        body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}],
-            max_tokens: 100
-        })
-    });
-    
-    const data = await response.json();
-    const resultText = data.choices[0].message.content.trim();
-    
-    // Call the Python function to display the result
-    pyodide.globals.add_message("chatbot", resultText);
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${apiKey}`
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}],
+                max_tokens: 100
+            })
+        });
+
+        // Check if the response is okay
+        if (!response.ok) {
+            console.error(`HTTP error! Status: ${response.status}`);
+            pyodide.globals.add_message("chatbot", `Error: ${response.statusText}`);
+            return;
+        }
+
+        // Parse the JSON response
+        const data = await response.json();
+
+        // Log the entire response for debugging purposes
+        console.log(data);
+
+        // Check if the expected property exists
+        if (data.choices && data.choices[0] && data.choices[0].message) {
+            const resultText = data.choices[0].message.content.trim();
+            pyodide.globals.add_message("chatbot", resultText);
+        } else {
+            console.error("Unexpected response structure:", data);
+            pyodide.globals.add_message("chatbot", "Sorry, I couldn't process the response.");
+        }
+    } catch (error) {
+        console.error("Error fetching response:", error);
+        pyodide.globals.add_message("chatbot", "An error occurred while fetching the response.");
+    }
 }
 
         </script>
