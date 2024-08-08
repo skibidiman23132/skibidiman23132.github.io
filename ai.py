@@ -27,7 +27,7 @@ def save_chat_history(history):
     if len(chat_history_str) > 4000:
         print("Chat history size exceeds cookie limits.")
         return
-    js.document.cookie = f"chat_history={chat_history_str}; path=/"
+    js.document.cookie = f"chat_history={chat_history_str}; path=/{history.json}"
 
 chat_data = load_chat_history()
 
