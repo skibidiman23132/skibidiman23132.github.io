@@ -1,5 +1,6 @@
 import js
 import json
+import os
 from pyodide.ffi import create_proxy
 
 # Load previous chat history from cookies
