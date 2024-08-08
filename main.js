@@ -33,10 +33,11 @@ document.querySelector('button').addEventListener('click', () => {
 
 var says = [
   "yes,i did steal this from railing",
-  "should i add a wiki?",
+  "shoutout to IdTech",
   "hello australians",
   "parents aprove(trust)",
   "artifcal smartness is fire trust",
+  "shes says shes from the islands",
   "mersker mersker",
   "papa louie better be paying me double for the amount of work im doing",
   "erm what the sigma",
