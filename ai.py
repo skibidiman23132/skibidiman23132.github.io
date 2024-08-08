@@ -3,9 +3,8 @@ import js
 import json
 from pyodide.ffi import create_proxy
 
-# Set the API key and expose it to JavaScript
+# Load the OpenAI API key from the environment
 openai_api_key = os.getenv("CHAT_GBT_API")
-js.pyodide.globals.set("openai_api_key", openai_api_key)
 
 # Load previous chat history from cookies
 def load_chat_history():
@@ -42,8 +41,8 @@ def send_message():
     add_message("user", user_input)
     chat_data.append({"role": "user", "content": user_input})
 
-    # Send user input to the JavaScript function for API call
-    js.window.fetch_response(user_input)
+    # Send user input and API key to the JavaScript function for API call
+    js.window.fetch_response(user_input, openai_api_key)
 
 def on_send_button_click(event):
     send_message()

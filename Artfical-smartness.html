@@ -27,6 +27,7 @@
             #chat-container {
                 width: 600px;
                 margin: 0 auto;
+                background-blend-mode:hue;
             }
             #chat-log {
                 border: 1px solid #20C20E;
@@ -49,38 +50,35 @@
         <h1>OpenAI Chatbot</h1>
         <div id="chat-container">
             <div id="chat-log"></div>
-            <input type="text" id="user-input" placeholder="Type your message here...">
+            <input type="text" id="user-input" placeholder="Type your request here...">
             <button id="send-btn">Send</button>
             <button id="reset-btn">Reset</button>
         </div>
         
         <script>
-            async function fetch_response(inputText) {
-                const apiKey = pyodide.globals.get("openai_api_key");
-                const url = "https://api.openai.com/v1/chat/completions";
-                
-                const response = await fetch(url, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Authorization": `Bearer ${apiKey}`
-                    },
-                    body: JSON.stringify({
-                        model: "gpt-3.5-turbo",
-                        messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}],
-                        max_tokens: 100
-                    })
-                });
-                
-                const data = await response.json();
-                const resultText = data.choices[0].message.content.trim();
-                
-                // Call the Python function to display the result
-                pyodide.globals.add_message("chatbot", resultText);
-            }
+            async function fetch_response(inputText, apiKey) {
+    const url = "https://api.openai.com/v1/chat/completions";
+    
+    const response = await fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+            model: "gpt-3.5-turbo",
+            messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}],
+            max_tokens: 100
+        })
+    });
+    
+    const data = await response.json();
+    const resultText = data.choices[0].message.content.trim();
+    
+    // Call the Python function to display the result
+    pyodide.globals.add_message("chatbot", resultText);
+}
 
-            // Expose the fetch_response function to PyScript
-            window.fetch_response = fetch_response;
         </script>
 
         <script type="py" src="./ai.py" config="./pyscript.toml" terminal></script>
