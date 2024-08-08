@@ -1,0 +1,5 @@
+- name: Run tests
+env:
+    CHAT_GBT_API: ${{ secrets.CHAT_GBT_API }}
+run:
+    nbdev_test_nbs
