@@ -1,10 +1,7 @@
-import os
 import js
 import json
+import os
 from pyodide.ffi import create_proxy
-
-# Load the OpenAI API key from the environment
-openai_api_key = os.getenv("CHAT_GBT_API")
 
 # Load previous chat history from cookies
 def load_chat_history():
@@ -42,7 +39,7 @@ def send_message():
     chat_data.append({"role": "user", "content": user_input})
 
     # Send user input and API key to the JavaScript function for API call
-    js.window.fetch_response(user_input, openai_api_key)
+    js.window.fetch_response(user_input, os.getenv("CHAT_GBT_API"))
 
 def on_send_button_click(event):
     send_message()
@@ -70,6 +67,17 @@ user_input.addEventListener('keypress', create_proxy(on_key_press))
 
 reset_button = js.document.getElementById('reset-btn')
 reset_button.addEventListener('click', create_proxy(reset_chat))
+
+# Handle messages from JavaScript
+def handle_message(event):
+    data = event.data
+    if data.type == "response_message":
+        add_message("chatbot", data.text)
+    elif data.type == "response_error":
+        add_message("chatbot", data.text)
+
+# Add the message event listener
+js.window.addEventListener('message', create_proxy(handle_message))
 
 # Initialize chat log with previous history
 for message in chat_data:
