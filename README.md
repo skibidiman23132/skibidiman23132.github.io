@@ -24,7 +24,7 @@
 - **Papa games**
         - [Flipline Studio](https://www.flipline.com/)
 - **Wallpaper**
-        - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
+        - [Cropped Space wallpaper]([https://www.artstation.com/artwork/5B51aW](https://alphacoders.com/author/view/59936))
 - **Im sorry but im too lazy too add anymore credits :(**
 - *pls dont sue me 🥺*
 
