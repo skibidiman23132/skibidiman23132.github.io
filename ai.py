@@ -70,11 +70,14 @@ reset_button.addEventListener('click', create_proxy(reset_chat))
 
 # Handle messages from JavaScript
 def handle_message(event):
-    data = event.data
-    if data.type == "response_message":
-        add_message("chatbot", data.text)
-    elif data.type == "response_error":
-        add_message("chatbot", data.text)
+    data = json.loads(event.data)
+    if isinstance(data, dict):
+        if data.get("type") == "response_message":
+            add_message("chatbot", data.get("text", ""))
+        elif data.get("type") == "response_error":
+            add_message("chatbot", data.get("text", ""))
+    else:
+        add_message("chatbot", "Received unexpected message format.")
 
 # Add the message event listener
 js.window.addEventListener('message', create_proxy(handle_message))
