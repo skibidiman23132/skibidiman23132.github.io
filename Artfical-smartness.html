@@ -9,10 +9,6 @@
         <link rel="stylesheet" href="styleai.css">
         <script type="module" src="core.js"></script>
         <meta charset="UTF-8">
-        <meta name="description" content="I made this website at school bc I wanted to play games">
-        <meta name="keywords" content="Games,nintendoboi2,github.io,nintendoboi22,github website, github game, ai">
-        <meta name="author" content="Nintendoboi2">
-        <meta name="google-adsense-account" content="ca-pub-8650522196901208">
         <meta property="og:title" content="Nintendoboi2's Website" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nintendoboi22.github.io/" />
@@ -55,36 +51,13 @@
             <div id="chat-log"></div>
             <input type="text" id="user-input" placeholder="Type your message here...">
             <button id="send-btn">Send</button>
+            <button id="reset-btn">Reset</button>
         </div>
         
-        <py-script>
-            from js import document
-
-            def display_response(response_text):
-                chat_log = document.getElementById("chat-log")
-                new_message = document.createElement("p")
-                new_message.innerText = "AI: " + response_text
-                chat_log.appendChild(new_message)
-                chat_log.scrollTop = chat_log.scrollHeight
-
-            def send_message(event):
-                user_input = document.getElementById("user-input").value
-                if user_input.strip():
-                    chat_log = document.getElementById("chat-log")
-                    user_message = document.createElement("p")
-                    user_message.innerText = "You: " + user_input
-                    chat_log.appendChild(user_message)
-                    chat_log.scrollTop = chat_log.scrollHeight
-                    document.getElementById("user-input").value = ""
-                    window.fetch_response(user_input)
-
-            document.getElementById("send-btn").addEventListener("click", send_message)
-        </py-script>
-
         <script>
             async function fetch_response(inputText) {
                 const apiKey = "YOUR_OPENAI_API_KEY"; // Replace with your actual OpenAI API key
-                const url = "https://api.openai.com/v1/completions";
+                const url = "https://api.openai.com/v1/chat/completions";
                 
                 const response = await fetch(url, {
                     method: "POST",
@@ -93,21 +66,23 @@
                         "Authorization": `Bearer ${apiKey}`
                     },
                     body: JSON.stringify({
-                        model: "text-davinci-003",  // Replace with the model you want to use
-                        prompt: inputText,
-                        max_tokens: 50
+                        model: "gpt-3.5-turbo",
+                        messages: [{"role": "system", "content": "You are an AI chatbot."}, {"role": "user", "content": inputText}],
+                        max_tokens: 100
                     })
                 });
                 
                 const data = await response.json();
-                const resultText = data.choices[0].text.trim();
+                const resultText = data.choices[0].message.content.trim();
                 
                 // Call the Python function to display the result
-                pyodide.globals.display_response(resultText);
+                pyodide.globals.add_message("chatbot", resultText);
             }
 
             // Expose the fetch_response function to PyScript
             window.fetch_response = fetch_response;
         </script>
+
+        <script type="py" src="./ai.py" config="./pyscript.toml" terminal></script>
     </body>
 </html>
