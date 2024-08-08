@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Artifcal Smartness</title>
-    <link rel="icon" type="image/jpg" href="favicon.jpg?v2" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<!--<link rel="stylesheet" href="style2.css"> 
-
-    PyScript CSS -->
-    <link rel="stylesheet" href="styleai.css">
-
-    <!-- This script tag bootstraps PyScript -->
-    <script type="module" src="core.js"></script>
+        <title>Artificial Smartness</title>
+        <link rel="icon" type="image/jpg" href="favicon.jpg?v2" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styleai.css">
+        <script type="module" src="core.js"></script>
+        <meta charset="UTF-8">
+        <meta name="description" content="I made this website at school bc I wanted to play games">
+        <meta name="keywords" content="Games,nintendoboi2,github.io,nintendoboi22,github website, github game, ai">
+        <meta name="author" content="Nintendoboi2">
+        <meta name="google-adsense-account" content="ca-pub-8650522196901208">
+        <meta property="og:title" content="Nintendoboi2's Website" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nintendoboi22.github.io/" />
+        <meta property="og:image" content="https://nintendoboi22.github.io/favicon.jpg" />
+        <meta property="og:description" content="I made this website at school bc I wanted to play games" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="5500ff" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
+        <meta name="twitter:card" content="summary_large_image">
+        <style>
+            body {
+                background-image: url('spcae.gif');
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+                font-family: 'Press Start 2P';
+            }
+            #chat-container {
+                width: 600px;
+                margin: 0 auto;
+            }
+            #chat-log {
+                border: 1px solid #20C20E;
+                height: 300px;
+                overflow-y: auto;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            #user-input {
+                width: calc(100% - 110px);
+                padding: 10px;
+            }
+            #send-btn, #reset-btn {
+                padding: 10px;
+                margin-left: 10px;
+            }
+        </style>
     </head>
+    <body>
+        <h1>OpenAI Chatbot</h1>
+        <div id="chat-container">
+            <div id="chat-log"></div>
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-btn">Send</button>
+        </div>
+        
+        <py-script>
+            from js import document
 
-    <!--Google website stuff-->
-  <meta charset="UTF-8">
-  <meta name="description" content="I made this website at school bc I wanted to play games">
-  <meta name="keywords" content="Games,nintendoboi2,github.io,nintendoboi22,github website, github game, ai">
-  <meta name="author" content="Nintendoboi2">
-  <meta name="google-adsense-account" content="ca-pub-8650522196901208">
- <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+            def display_response(response_text):
+                chat_log = document.getElementById("chat-log")
+                new_message = document.createElement("p")
+                new_message.innerText = "AI: " + response_text
+                chat_log.appendChild(new_message)
+                chat_log.scrollTop = chat_log.scrollHeight
 
-<!--Embeding stuff-->
-<meta property="og:title" content="Nintendoboi2s Website" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://nintendoboi22.github.io/" />
-<meta property="og:image" content="https://nintendoboi22.github.io/favicon.jpg" />
-<meta property="og:description" content="I made this website at school bc I wanted to play games" />
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="5500ff" />
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
-<meta name="twitter:card" content="summary_large_image">
-  <style>
-  body {
-  background-image: url('spcae.gif');
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-  font-family: 'Press Start 2P'}
-  
-  #chat-container {
-            width: 600px;
-            margin: 0 auto;
-        }
-        #chat-log {
-            border: 1px solid #20C20E;
-            height: 300px;
-            overflow-y: auto;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        #user-input {
-            width: calc(100% - 110px);
-            padding: 10px;
-        }
-        #send-btn, #reset-btn {
-            padding: 10px;
-            margin-left: 10px;
-        }
-</style>
-<body>
-    <script type="py" src="./ai.py" config="./pyscript.toml" terminal></script>
-</body>
+            def send_message(event):
+                user_input = document.getElementById("user-input").value
+                if user_input.strip():
+                    chat_log = document.getElementById("chat-log")
+                    user_message = document.createElement("p")
+                    user_message.innerText = "You: " + user_input
+                    chat_log.appendChild(user_message)
+                    chat_log.scrollTop = chat_log.scrollHeight
+                    document.getElementById("user-input").value = ""
+                    window.fetch_response(user_input)
+
+            document.getElementById("send-btn").addEventListener("click", send_message)
+        </py-script>
+
+        <script>
+            async function fetch_response(inputText) {
+                const apiKey = "YOUR_OPENAI_API_KEY"; // Replace with your actual OpenAI API key
+                const url = "https://api.openai.com/v1/completions";
+                
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify({
+                        model: "text-davinci-003",  // Replace with the model you want to use
+                        prompt: inputText,
+                        max_tokens: 50
+                    })
+                });
+                
+                const data = await response.json();
+                const resultText = data.choices[0].text.trim();
+                
+                // Call the Python function to display the result
+                pyodide.globals.display_response(resultText);
+            }
+
+            // Expose the fetch_response function to PyScript
+            window.fetch_response = fetch_response;
+        </script>
+    </body>
 </html>
