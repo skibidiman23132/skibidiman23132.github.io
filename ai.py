@@ -65,7 +65,7 @@ def on_send_button_click(event):
 def on_key_press(event):
         if event.key == "Enter":
             if event.shiftKey:
-                # Allow new line
+                # Allow new line    
                 return
             else:
                 # Prevent default action and send message
