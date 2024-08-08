@@ -4,17 +4,30 @@ import os
 from pyodide.ffi import create_proxy
 
 def load_chat_history():
-    chat_history = js.document.cookie
-    if chat_history:
+    chat_history_cookie = js.document.cookie
+    # Find the chat_history cookie
+    chat_history_str = ""
+    for item in chat_history_cookie.split(";"):
+        if item.strip().startswith("chat_history="):
+            chat_history_str = item.strip().split("=", 1)[1]
+            break
+    if chat_history_str:
         try:
-            chat_history = json.loads(chat_history)
+            chat_history = json.loads(chat_history_str)
             return chat_history
-        except:
+        except json.JSONDecodeError:
+            print("Failed to decode chat history.")
             return []
     return []
 
 def save_chat_history(history):
-    js.document.cookie = f"chat_history={json.dumps(history)}; path=/"
+    # Convert history to a JSON string
+    chat_history_str = json.dumps(history)
+    # Ensure the chat history doesn't exceed cookie size limitations
+    if len(chat_history_str) > 4000:
+        print("Chat history size exceeds cookie limits.")
+        return
+    js.document.cookie = f"chat_history={chat_history_str}; path=/"
 
 chat_data = load_chat_history()
 
@@ -66,9 +79,7 @@ reset_button.addEventListener('click', create_proxy(reset_chat))
 def handle_message(event):
     print("Raw message data:", event.data)
     try:
-        # Check if the data is a string
         if isinstance(event.data, str):
-            # Attempt to parse the data
             data = json.loads(event.data)
             if isinstance(data, dict):
                 if data.get("type") == "response_message":
