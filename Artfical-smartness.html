@@ -28,19 +28,14 @@
                 width: calc(100% - 110px);
                 padding: 10px;
             }
-            #send-btn, #reset-btn {
-                padding: 10px;
-                margin-left: 10px;
-            }
         </style>
     </head>
     <body>
-        <h1>OpenAI Chatbot</h1>
+        <font COLOR="#ffffff"><h1>OpenAI Chatbot</h1>
         <div id="chat-container">
             <div id="chat-log"></div>
             <input type="text" id="user-input" placeholder="Type your request here...">
             <button id="send-btn">Send</button>
-            <button id="reset-btn">Reset</button>
         </div>
         
         <script>
@@ -83,7 +78,7 @@
 }
 
         </script>
-
+</font>
         <script type="py" src="./ai.py" config="./pyscript.toml" terminal></script>
     </body>
 </html>
