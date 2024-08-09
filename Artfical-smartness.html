@@ -55,7 +55,7 @@
             window.postMessage(JSON.stringify({ type: "response_error", text: `Error: ${response.statusText}` }));
             return;
         }
-
+ 
         const data = await response.json();
         console.log(data);
 
