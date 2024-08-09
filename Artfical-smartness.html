@@ -33,11 +33,6 @@
     <body>
         <font COLOR="#ffffff">
         <center><h1>OpenAI Chatbot</h1></center><br>
-        <div id="chat-container">Enter Input:
-            <div id="chat-log"></div>
-            <button id="send-btn">Send</button>
-        </div>
-        
         <script>
        async function fetch_response(inputText, apiKey) {
     const url = "https://api.openai.com/v1/chat/completions";
@@ -78,6 +73,10 @@
 }
 
         </script>
+        <div id="chat-container">Enter Input:
+            <div id="chat-log"></div>
+            <button id="send-btn">Send</button>
+        </div>
 </font>
         <script type="py" src="./ai.py" config="./pyscript.toml" terminal></script>
     </body>
