@@ -34,10 +34,6 @@ def on_key_press(event):
             event.preventDefault()
             send_message()
 
-def reset_chat(event):
-    js.document.getElementById('chat-log').innerHTML = ""
-    js.document.getElementById('user-input').value = ""
-    chat_data.clear()
 
 send_button = js.document.getElementById('send-btn')
 send_button.addEventListener('click', create_proxy(on_send_button_click))
