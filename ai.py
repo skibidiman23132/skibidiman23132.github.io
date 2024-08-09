@@ -45,8 +45,6 @@ send_button.addEventListener('click', create_proxy(on_send_button_click))
 user_input = js.document.getElementById('user-input')
 user_input.addEventListener('keypress', create_proxy(on_key_press))
 
-reset_button = js.document.getElementById('reset-btn')
-reset_button.addEventListener('click', create_proxy(reset_chat))
 
 def handle_message(event):
     try:
