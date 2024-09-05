@@ -1,8 +1,5 @@
-var attackerLink = document.getElementById('getNumberattacker');
-var defenderLink = document.getElementById('getNumberdefender');
-
-attackerLink.onclick = getNumberattacker;
-defenderLink.onclick = getNumberdefender;
+document.getElementById('Attacker').onclick = getNumberattacker;
+document.getElementById('Defender').onclick = getNumberdefender;
 
 function getNumberattacker() {
     var minNumber = 0;
