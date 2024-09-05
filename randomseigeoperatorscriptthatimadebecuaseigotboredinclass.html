@@ -35,12 +35,43 @@
             background-color: transparent;
             text-decoration: underline;
         }
+        .console-log-div {
+            border: 1px solid #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 95% !important;
+            background-color: #000000;
+          }
+          #defentlynotahiddenButton {
+            display: none;
+        }
     </style>
+<script src="/console-log-div.js"></script>
 </head>
 <body>
     <center>
         <br><br><br>
+        <div id="nothing..."
         <font color="#ffffff"><h1 class="title">Random Siege OP</h1>
+          <button id="defentlynotahiddenButton" onclick="showConsoleLogDiv()">Console Log?</button>
+
+          <script>
+              let clickCount = 0;
+        const clickableWord = document.getElementById('clickableWord');
+        const hiddenButton = document.getElementById('hiddenButton');
+
+        clickableWord.addEventListener('click', () => {
+            clickCount++;
+            if (clickCount >= 10) {
+                hiddenButton.style.display = 'block';
+            }
+        });
+
+        function showConsoleLogDiv() {
+            const consoleLogDiv = document.querySelector('.console-log-div');
+            console.log(consoleLogDiv.innerHTML);
+        }
+          </script>
         <br><br>
         <h2>Attacker: <div id="Attacker"></div> Defender: <div id="Defender"></div></h2>
       </font></center>
