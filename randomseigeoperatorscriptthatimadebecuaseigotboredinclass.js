@@ -1,20 +1,21 @@
-//https://stackoverflow.com/a/16147661
+var attackerLink = document.getElementById('getNumberattacker');
+var defenderLink = document.getElementById('getNumberdefender');
 
-var link = document.getElementById('getNumberattacker','getNumberdefender'); // Gets the link
-link.onclick = getNumberattacker; getNumberdefender; // Runs the function on click
+attackerLink.onclick = getNumberattacker;
+defenderLink.onclick = getNumberdefender;
 
 function getNumberattacker() {
-    var minNumber = 0; // The minimum number you want
-    var maxNumber = 38; // The maximum number you want
-    var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // Generates random number
-    $('#myNumber').html(randomnumber); // Sets content of <div> to number
-    return false; // Returns false just to tidy everything up
+    var minNumber = 0;
+    var maxNumber = 38;
+    var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
+    document.getElementById('Attacker').innerHTML = randomnumber;
+    return false;
 }
 
 function getNumberdefender() {
-    var minNumber = 0; // The minimum number you want
-    var maxNumber = 37; // The maximum number you want
-    var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // Generates random number
-    $('#Defender').html(randomnumber); // Sets content of <div> to number
-    return false; // Returns false just to tidy everything up
+    var minNumber = 0;
+    var maxNumber = 37;
+    var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
+    document.getElementById('Defender').innerHTML = randomnumber;
+    return false;
 }
