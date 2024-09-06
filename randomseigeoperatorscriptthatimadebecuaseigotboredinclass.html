@@ -41,30 +41,37 @@
             border-radius: 5px;
             width: 95% !important;
             background-color: #000000;
-          }
-          #defentlynotahiddenButton {
+            display: none;
+        }
+        #defentlynotahiddenButton {
             display: none;
         }
     </style>
-<script src="/console-log-div.js"></script>
+    <script src="/console-log-div.js"></script>
 </head>
 <body>
     <center>
         <br><br><br>
         <h1 id="nothing..." style="color:white;" class="title">Random Siege OP</h1>
-          <button id="defentlynotahiddenButton" onclick="showConsoleLogDiv()">Console Log?</button>
+        <button class="console-log-div" id="defentlynotahiddenButton" onclick="showConsole()">Open the Console?</button>
+        <div class="console-log-div" id="consoleLog">Console is now open!</div>
 
-          <script>
+        <script>
             let clickCount = 0;
             const word = document.getElementById('nothing...');
             const button = document.getElementById('defentlynotahiddenButton');
-    
+            const consoleLog = document.getElementById('consoleLog');
+
             word.addEventListener('click', () => {
                 clickCount++;
                 if (clickCount === 10) {
                     button.style.display = 'block';
                 }
             });
+
+            function showConsole() {
+                consoleLog.style.display = 'block';
+            }
         </script>
         <br><br>
         <h2 style="color:white;">Attacker: <div id="Attacker"></div> Defender: <div id="Defender"></div></h2>
