@@ -51,29 +51,23 @@
 <body>
     <center>
         <br><br><br>
-        <div id="nothing..."
-        <font color="#ffffff"><h1 class="title">Random Siege OP</h1></font>
+        <h1 id="nothing..." style="color:white;" class="title">Random Siege OP</h1>
           <button id="defentlynotahiddenButton" onclick="showConsoleLogDiv()">Console Log?</button>
 
           <script>
-              let clickCount = 0;
-        const clickableWord = document.getElementById('clickableWord');
-        const hiddenButton = document.getElementById('hiddenButton');
-
-        clickableWord.addEventListener('click', () => {
-            clickCount++;
-            if (clickCount >= 10) {
-                hiddenButton.style.display = 'block';
-            }
-        });
-
-        function showConsoleLogDiv() {
-            const consoleLogDiv = document.querySelector('.console-log-div');
-            console.log(consoleLogDiv.innerHTML);
-        }
-          </script>
+            let clickCount = 0;
+            const word = document.getElementById('nothing...');
+            const button = document.getElementById('defentlynotahiddenButton');
+    
+            word.addEventListener('click', () => {
+                clickCount++;
+                if (clickCount === 10) {
+                    button.style.display = 'block';
+                }
+            });
+        </script>
         <br><br>
-        <font color="#ffffff"><h2>Attacker: <div id="Attacker"></div> Defender: <div id="Defender"></div></h2></font>
+        <h2 style="color:white;">Attacker: <div id="Attacker"></div> Defender: <div id="Defender"></div></h2>
     </center>
     <script src="randomseigeoperatorscriptthatimadebecuaseigotboredinclass.js"></script>
 </body>
