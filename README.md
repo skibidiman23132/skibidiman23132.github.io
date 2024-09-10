@@ -23,6 +23,10 @@
         - [Kongregate](http://www.kongregate.com/games/juicybeast/burrito-bison-launcha-libre)
 - **Papa games**
         - [Flipline Studio](https://www.flipline.com/)
+- **There Is No Game**
+        - [KaMiZoTo](https://thereisnogame.fandom.com/wiki/Creator)
+- **Cluster Truck**
+        - [Landfall](https://landfall.se/clustertruck)
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
 - **Im sorry but im too lazy too add anymore credits :(**
