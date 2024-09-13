@@ -1,3 +1,4 @@
+/*
 .background {
   background-image: url('spcae.gif');
   background-position: center;
@@ -51,6 +52,8 @@
     }
   }
 }
+
+
 /* #skib {
   position: fixed;
   top: 50%;
