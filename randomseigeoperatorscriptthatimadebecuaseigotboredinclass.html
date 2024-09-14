@@ -15,7 +15,7 @@
     <meta name="author" content="Nintendoboi2">
     <meta name="google-adsense-account" content="ca-pub-8650522196901208">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://randojs.com/1.0.0.js"></script>
     <style>
         body {
             background-image: url('spcae.gif');
@@ -35,48 +35,27 @@
             background-color: transparent;
             text-decoration: underline;
         }
-        .console-log-div {
-            border: 1px solid #ffffff;
-            padding: 10px 25px;
-            border-radius: 5px;
-            width: 95% !important;
-            background-color: #222121;
-            display: none;
-        }
-        #defentlynotahiddenButton {
-            display: none;
-        }
-        
+        #myNumber{
+                font-size:100px;
+                text-align:center;
+                margin:50px auto;
+                font-family:Arial, sans-serif;
+            }
     </style>
-    <script src="/console-log-div.js"></script>
+     <script>
+        function showRandomNumber(){
+            document.getElementById("myNumberd").innerHTML = rando(0, 37);
+        }
+        function showRandomNumber(){
+            document.getElementById("myNumbera").innerHTML = rando(0, 38);
+        }
+    </script>
 </head>
-<body>
+<body onload="showRandomNumber();">
     <center>
         <br><br><br>
-        <h1 id="nothing..." style="color:white;" class="title">Random Siege OP</h1>
-        <button id="defentlynotahiddenButton" onclick="showConsole()">Open the Console?</button>
-        <div style="color:white;" class="console-log-div" id="consoleLog"></div>
-
-        <script>
-            let clickCount = 0;
-            const word = document.getElementById('nothing...');
-            const button = document.getElementById('defentlynotahiddenButton');
-            const consoleLog = document.getElementById('consoleLog');
-
-            word.addEventListener('click', () => {
-                clickCount++;
-                if (clickCount === 10) {
-                    button.style.display = 'block';
-                }
-            });
-
-            function showConsole() {
-                consoleLog.style.display = 'block';
-            }
-        </script>
         <br><br>
-        <h2 style="color:white;">Attacker: <div id="Attacker"></div> Defender: <div id="Defender"></div></h2>
+        <h2 style="color:white;">Attacker: <div id="myNumbera"></div> Defender: <div id="myNumberd"></div></h2>
     </center>
-    <script src="randomseigeoperatorscriptthatimadebecuaseigotboredinclass.js"></script>
 </body>
 </html>
