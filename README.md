@@ -2,7 +2,7 @@
 ![🥵](spicey.png)
 
 > # TODO list
->>  **Add more games**
+-  **Add more games**
 
 ---
 
