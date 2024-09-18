@@ -34,6 +34,7 @@ document.querySelector('button').addEventListener('click', () => {
 var says = [
   "yes,i did steal this from railing",
   "shoutout to IdTech",
+  "DMCA, no more minecraft :(",
   "hello australians",
   "parents aprove(trust)",
   "artifcal smartness is fire trust",
