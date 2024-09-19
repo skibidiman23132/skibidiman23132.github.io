@@ -37,15 +37,11 @@
         }
     </style>
      <script>
-        function showRandomNumber(){
-            document.getElementById("myNumberd").innerHTML = rando(1, 37);
-        }
-        function showRandomNumber2(){
-            document.getElementById("myNumbera").innerHTML = rando(1, 38);
-        }
+       const Attacker = ["Striker","Sledge", "Thatcher", "Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze","Blitz","IQ","Buck","Blackbeard","Capitão","Hibana","Jackal","Ying","Zofia","Dokkaebi","Lion","Finka","Maverick","Nomad","Gridlock","Nøkk","Amaru","Kali","Iana","Ace","Zero","Flores","Osa","Sens","Grimm","Brava","Ram","Deimos"];
+       const Defender= ["Sentry","Smoke","Mute","Castle","Pulse","Doc","Rook","Kapkan","Tachanka","Jäger","Bandit","Frost","Valkyrie","Caveira","Echo","Mira","Lesion","Ela","Vigil","Maestro","Alibi","Clash","Kaid","Mozzie","Warden","Goyo","Wamai","Orax","Melusi","Aruni","Thunderbird","Thorn","Azami","Solis","Fenrir","Tubarão","Skopos"];
     </script>
 </head>
-<body onload="showRandomNumber();showRandomNumber2();">
+<body onload="Attacker();Defender();">
     <center>
         <br><br><br>
         <h1 style="color:white;" class="title">Random Siege Op</h1>
