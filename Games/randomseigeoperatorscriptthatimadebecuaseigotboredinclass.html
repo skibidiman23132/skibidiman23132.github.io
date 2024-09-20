@@ -21,7 +21,7 @@
             background-image: url('/spcae.gif');
             background-attachment: fixed; 
             background-size: 100% 100%;
-            font-family: 'Press Start 2P';
+            font-family: 'Press Start 2P', cursive;
         }
         
         a:link, a:visited {
@@ -35,19 +35,50 @@
             background-color: transparent;
             text-decoration: underline;
         }
+        /*https://getcssscan.com/css-buttons-examples#:~:text=by-,Typedream,-Button%2035*/
+        .cool-button {
+            background: #5E5DF0;
+            border-radius: 999px;
+            box-shadow: #5E5DF0 0 10px 20px -10px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            opacity: 1;
+            outline: 0 solid transparent;
+            padding: 8px 18px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: fit-content;
+            word-break: break-word;
+            border: 0;
+        }
     </style>
-     <script>
-       const Attacker = ["Striker","Sledge", "Thatcher", "Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze","Blitz","IQ","Buck","Blackbeard","Capitão","Hibana","Jackal","Ying","Zofia","Dokkaebi","Lion","Finka","Maverick","Nomad","Gridlock","Nøkk","Amaru","Kali","Iana","Ace","Zero","Flores","Osa","Sens","Grimm","Brava","Ram","Deimos"];
-       const Defender= ["Sentry","Smoke","Mute","Castle","Pulse","Doc","Rook","Kapkan","Tachanka","Jäger","Bandit","Frost","Valkyrie","Caveira","Echo","Mira","Lesion","Ela","Vigil","Maestro","Alibi","Clash","Kaid","Mozzie","Warden","Goyo","Wamai","Orax","Melusi","Aruni","Thunderbird","Thorn","Azami","Solis","Fenrir","Tubarão","Skopos"];
+    <script>
+        const attackers = ["Striker","Sledge", "Thatcher", "Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze","Blitz","IQ","Buck","Blackbeard","Capitão","Hibana","Jackal","Ying","Zofia","Dokkaebi","Lion","Finka","Maverick","Nomad","Gridlock","Nøkk","Amaru","Kali","Iana","Ace","Zero","Flores","Osa","Sens","Grimm","Brava","Ram","Deimos"];
+        const defenders = ["Sentry","Smoke","Mute","Castle","Pulse","Doc","Rook","Kapkan","Tachanka","Jäger","Bandit","Frost","Valkyrie","Caveira","Echo","Mira","Lesion","Ela","Vigil","Maestro","Alibi","Clash","Kaid","Mozzie","Warden","Goyo","Wamai","Orax","Melusi","Aruni","Thunderbird","Thorn","Azami","Solis","Fenrir","Tubarão","Skopos"];
+
+        function getRandomOperator(list) {
+            return list[Math.floor(Math.random() * list.length)];
+        }
+
+        function setOperators() {
+            document.getElementById("attacker").innerText = getRandomOperator(attackers);
+            document.getElementById("defender").innerText = getRandomOperator(defenders);
+        }
     </script>
 </head>
-<body onload="Attacker();Defender();">
+<body onload="setOperators()">
     <center>
         <br><br><br>
         <h1 style="color:white;" class="title">Random Siege Op</h1>
         <br><br>
-        <h2 style="color:white;">Attacker: <div id="Attacker"></div> Defender: <div id="Defender"></div></h2>
-        <br><button type="button" onclick="Attacker();Defender();">New Op?</button>
+        <h2 style="color:white;">Attacker: <span id="attacker"></span> Defender: <span id="defender"></span></h2>
+        <br><button class="cool-button" role="button" onclick="setOperators()">New Op?</button>
     </center>
 </body>
 </html>
