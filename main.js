@@ -116,6 +116,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       says.push(`nice isp, "${ipAddress}"`);
       splashText();
     });
+  fetch("https://discord.com/api/guilds/1288933489818865784/widget.json")
+    .then((response) => response.json())
+    .then((data) => {
+      invite = data.instant_invite;
+      says.push(`Join the discord? "${invite}"`);
+      splashText();
+    });
 });
 
 //function cheat() {
