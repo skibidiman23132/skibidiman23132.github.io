@@ -25,6 +25,7 @@
 // };
 
 
+document.onkeydown = function (e) { if (e.keycode === 192) { googleclassroom(); } };
 
 document.onkeydown = function (e) { if (e.keyCode === 13) { splashText(); } };
 document.querySelector('button').addEventListener('click', () => {
