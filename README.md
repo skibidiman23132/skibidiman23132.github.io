@@ -5,6 +5,8 @@
 -  **Add more games**
 
 ---
+[discord](https://discord.gg/KAxqmAjTsm) ?
+---
 
 > # Game Owners
 
