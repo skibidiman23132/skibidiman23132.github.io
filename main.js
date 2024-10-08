@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .then((response) => response.json())
     .then((data) => {
       invite = data.instant_invite;
-      says.push(`Join the discord? "${invite}"`);
+      says.push(`Join? "${invite}"`);
       splashText();
     });
 });
