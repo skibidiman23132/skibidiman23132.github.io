@@ -37,6 +37,8 @@ var says = [
   "shoutout to IdTech",
   "DMCA, no more minecraft :(",
   "hello australians",
+  "Updated once in a while",
+  "680 ish GOOGLE CLICKS RAHHHHHH",
   "parents aprove(trust)",
   "artifcal smartness is fire trust",
   "shes says shes from the islands",
