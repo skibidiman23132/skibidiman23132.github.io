@@ -39,11 +39,11 @@ a:active {
 #search-input {
   padding: 10px;
   width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #696969;
   border-radius: 5px;
 }
 
-.search-button {
+.button-85 {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -58,7 +58,7 @@ a:active {
   touch-action: manipulation;
 }
 
-.search-button:before {
+.button-85:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -98,7 +98,7 @@ a:active {
   }
 }
 
-.search-button:after {
+.button-85:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -109,5 +109,4 @@ a:active {
   top: 0;
   border-radius: 10px;
 }
-
 /* By CSS Scan */
