@@ -82,24 +82,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   fetch("https://ipv4.wtfismyip.com/json")
     .then((response) => response.json())
     .then((data) => {
-      proxylocation = data.YourFuckingLocation;
-      says.push(`Sending missile to ${proxylocation}😈`);
-      splashText();
-    });
-  
-  fetch("https://ipv4.wtfismyip.com/json")
-    .then((response) => response.json())
-    .then((data) => {
-      ipAddress = data.YourFuckingIPAddress;
-      says.push(`umm your ip is ${ipAddress}`);
-      splashText();
-    });
-  fetch("https://ipv4.wtfismyip.com/json")
-    .then((response) => response.json())
-    .then((data) => {
-      ipAddress = data.YourFuckingISP;
-      says.push(`nice isp, "${ipAddress}"`);
-      splashText();
+        proxylocation = data.YourFuckingLocation;
+        ipAddress = data.YourFuckingIPAddress;
+        isp = data.YourFuckingISP;
+        says.push(`Sending missile to ${proxylocation}😈`);
+        says.push(`umm your ip is ${ipAddress}`);
+        says.push(`nice isp, "${isp}"`);
+        splashText();
     });
   fetch("https://discord.com/api/guilds/1288933489818865784/widget.json")
     .then((response) => response.json())
