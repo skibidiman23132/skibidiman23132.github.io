@@ -1,5 +1,5 @@
 document.onkeydown = function (e) {
-    if (e.keyCode === 192) {
+    if (e.keyCode === 81) {
         toggleGoogleClassroom();
     }
 };
@@ -16,6 +16,7 @@ function toggleGoogleClassroom() {
         document.body.appendChild(iframe);
     }
 }
+
 
 
 
