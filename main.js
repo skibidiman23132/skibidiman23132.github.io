@@ -7,8 +7,11 @@ window.addEventListener("keydown", function (e) {
 
 
 
-document.onkeydown = function (e) { if (e.keyCode === 13) { splashText(); } };
-document.querySelector('button').addEventListener('click', () => {
+document.onkeydown = function (e) {
+  if (e.key === "Enter") {
+      splashText();
+  }
+};document.querySelector('button').addEventListener('click', () => {
   while (true) {}
 });
 
