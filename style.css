@@ -1,84 +1,57 @@
-/*
-.background {
+
+body {
   background-image: url('spcae.gif');
-  background-position: center;
-  background-size: fixed;
-  overflow: hidden;
+  background-attachment: fixed; 
   background-size: 100% 100%;
+  font-family: 'Press Start 2P'}
+      
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
 }
-.add-fav {
-  display: inline-block;
-  padding: 5px;
-  cursor: pointer;
+
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  margin: 20px 0;
+  text-align: center; /* Center the search bar */
+}
+
+#search-input {
+  padding: 10px;
+  width: 300px;
   border: 1px solid #ccc;
-  background: -webkit-linear-gradient( top,#fff,#ddd) #ddd;
-  position: relative;
-  transition: all .5s ease;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 1px #eee;
-  
-  &:hover {
-    background: -webkit-linear-gradient( top,#fff,#ccc) #ddd;
-  }
-
-  .icon-heart {
-    font-size: 24px;
-    color: #666;
-    position: relative;
-    transition: all .5s ease-in-out;
-  }
-  .icon-plus-sign {
-    font-size: 10px;
-    color: #333;
-    background: #fff;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
-    height: 11px;
-    width: 11px;
-    line-height: 11px;
-    text-align: center;
-    transition: all 1s ease-in-out;
-  }
-  input[type="checkbox"] { 
-    position: absolute;
-    opacity: 0;
-    &:checked + .icon-heart {
-      color: rgb(255, 0, 0);
-      .icon-plus-sign {
-        color: green;
-      }
-    }
-  }
+  border-radius: 5px;
 }
 
-
-/* #skib {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: dark gray;
-  padding: 20px;
-  border: 1px solid black;
-  z-index: 100;
-} */
-
-/*
-.lock
-{
-  display: none;
-
+#search-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#loginblock{
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 100;
+#search-button:hover {
+  background-color: #45a049;
 }
-*/

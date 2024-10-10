@@ -27,57 +27,11 @@
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
 <meta name="twitter:card" content="summary_large_image">
 
-  <style>
-/*.menu {cursor: context-menu;}*/
-
-  body {
-  background-image: url('spcae.gif');
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-  font-family: 'Press Start 2P'}
-      
-a:link {
-  color: blue;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-/* .heart {
-            cursor: pointer;
-            color: grey;
-            font-size: 24px
-        }
-        .heart.favorited {
-            color: red;
-        }
-        .favorite-list {
-            list-style-type: none;
-        } */
-</style>
     <script>
 // thank you bing ai(i dont answer questions)
 window.onload = function() {
-  // Check if the savedTime exists in localStorage and set it, otherwise start from 0
   var savedTime = localStorage.getItem('savedTime') ? parseInt(localStorage.getItem('savedTime')) : 0;
 
-  // Update the counter every second
   setInterval(function() {
     savedTime++;
     localStorage.setItem('savedTime', savedTime);
@@ -89,13 +43,11 @@ function resetTime() {
   document.getElementById('time-counter').textContent = formatTime(0);
 }
 
-// Function to format the time into a more readable format
 function formatTime(seconds) {
   var hours = Math.floor(seconds / 3600);
   var minutes = Math.floor((seconds % 3600) / 60);
   seconds = seconds % 60;
 
-  // Add singular or plural time units
   var hoursDisplay = hours > 0 ? hours + (hours === 1 ? ' hour ' : ' hours ') : '';
   var minutesDisplay = minutes > 0 ? minutes + (minutes === 1 ? ' minute ' : ' minutes ') : '';
   var secondsDisplay = seconds + (seconds === 1 ? ' second' : ' seconds');
@@ -105,15 +57,6 @@ function formatTime(seconds) {
 </script>
   </head> 
 <center>
-  <!--
-<div id="login">
-  <br><br><br><br><br><br><br><br><br><br><br>
-  <input type="text" id="txt_user" name="txt_user"/>
-  <input type="password" id="txt_pass" name="txt_pass"/><br>
-  <input type="button" id="imdone" name="imdone" value="Submit"/>
-  </div>
--->
-  <!--<div id="content" class="lock">  -->
     <h3 class="title"><Font COLOR="#ffffff">
       Panic Button, press <kbd>Q</kbd> key</h3>      
 <i>
@@ -149,76 +92,10 @@ function formatTime(seconds) {
 </script>
 
 -->
-<!-- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const gameList = document.getElementById('game-list');
-      const favoriteList = document.getElementById('favorite-list');
-      const hearts = document.querySelectorAll('.heart');
 
-      // Load favorites from cookies
-      const favorites = JSON.parse(getCookie('favorites') || '[]');
-      favorites.forEach(favorite => {
-          const gameItem = document.querySelector(`#game-list a[href="${favorite}"]`).parentElement;
-          addFavorite(gameItem);
-      });
-
-      hearts.forEach(heart => {
-          heart.addEventListener('click', function() {
-              const gameItem = this.parentElement;
-              if (this.classList.contains('favorited')) {
-                  removeFavorite(gameItem);
-              } else {
-                  addFavorite(gameItem);
-              }
-              updateCookies();
-          });
-      });
-
-      function addFavorite(gameItem) {
-          const heart = gameItem.querySelector('.heart');
-          heart.classList.add('favorited');
-          const clone = gameItem.cloneNode(true);
-          clone.querySelector('.heart').classList.add('favorited');
-          favoriteList.appendChild(clone);
-      }
-
-      function removeFavorite(gameItem) {
-          const heart = gameItem.querySelector('.heart');
-          heart.classList.remove('favorited');
-          const favoriteItem = Array.from(favoriteList.children).find(item => item.querySelector('a').href === gameItem.querySelector('a').href);
-          if (favoriteItem) {
-              favoriteList.removeChild(favoriteItem);
-          }
-      }
-
-      function updateCookies() {
-          const favoriteLinks = Array.from(favoriteList.querySelectorAll('a')).map(a => a.getAttribute('href'));
-          setCookie('favorites', JSON.stringify(favoriteLinks), 365);
-      }
-
-      function setCookie(name, value, days) {
-          const date = new Date();
-          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-          const expires = "expires=" + date.toUTCString();
-          document.cookie = name + "=" + value + ";" + expires + ";path=/";
-      }
-
-      function getCookie(name) {
-          const nameEQ = name + "=";
-          const ca = document.cookie.split(';');
-          for (let i = 0; i < ca.length; i++) {
-              let c = ca[i];
-              while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-              if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-          }
-          return null;
-      }
-  });
-</script> -->
-     <!--- 
-            Example
-  <a href=" Link " target="_blank"> Name </a> </h3>
---->
+<div class="search-bar">
+  <input type="text" id="search-input" placeholder="Game Name Here" />
+  <button id="search-button">Search</button>
 
 <h2>Favorites(WIP)</h2>
 

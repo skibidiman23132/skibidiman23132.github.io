@@ -1,10 +1,35 @@
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const gameList = document.querySelector('.game-list');
+
+searchButton.addEventListener('click', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const games = Array.from(document.getElementsByClassName('game'));
+
+    // Filter games based on the search term
+    const matchedGames = games.filter(game => game.innerText.toLowerCase().includes(searchTerm));
+    
+    // Clear the game list
+    gameList.innerHTML = '';
+
+    // Push matched games to the top
+    matchedGames.forEach(game => gameList.appendChild(game));
+
+    // Add unmatched games back to the list
+    games.forEach(game => {
+        if (!matchedGames.includes(game)) {
+            gameList.appendChild(game);
+        }
+    });
+});
+
+
+
 window.addEventListener("keydown", function (e) {
     if (e.key === "q" || e.key === "Q") {
         window.open("https://classroom.google.com", "_blank");
     }
 });
-
-
 
 
 document.onkeydown = function (e) {
