@@ -69,7 +69,7 @@ var says = [
   "ZZZZZZZZZZZzzzzzzzzzzzzzzzzzzzz",
   "Special teams, speacial plays, speacial players",
   "ALEXXXXXXX",
-  "ty willard wildcats and twality join my discord - iCryWhenAngelsDeserve2Die"
+  "ty willard wildcats and twality join my discord - iCryWhenAngelsDeserve2Die",
   "skibidi skuza",
   "SUB TO FTTREDDIE",
   "SUB TO BILLYAVIATION",
