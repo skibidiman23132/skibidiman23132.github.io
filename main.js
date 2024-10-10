@@ -1,8 +1,8 @@
-document.onkeydown = function (e) {
-    if (e.keyCode === 81) {
+window.addEventListener("keydown", function (e) {
+    if (e.key === "q" || e.key === "Q") {
         toggleGoogleClassroom();
     }
-};
+});
 
 function toggleGoogleClassroom() {
     var iframe = document.getElementById("classroom-frame");
