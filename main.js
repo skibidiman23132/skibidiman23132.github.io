@@ -99,27 +99,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 });
 
-//function cheat() {
-//  var savedTime = parseInt(localStorage.getItem('savedTime'));
-//  savedTime += 3600; // Add 3600 seconds to the savedTime
-//  localStorage.setItem('savedTime', savedTime);
-//  document.getElementById('time-counter').textContent = formatTime(savedTime);
-//}
 /*
-let user=document.getElementById("txt_user")
-let password=document.getElementById("txt_pass")
-let button=document.getElementById("imdone")
-let login=document.getElementById("login")
-let maincontent =document. getElementById("content");
-let page_cookie={};
-try{
-page_cookie=JSON.parse(document.cookie);
-} catch(error){
-      console.error(error);
-      page_cookie.login=false;
-      document.cookie=JSON.parse(page_cookie);
-      document.cookie=JSON.stringify(page_cookie);
-}
 auth=[{username:"Student", password:"Lobster"},
  {username:"Owner", password:"Frog"}];
 function checkpassword(username,password,auth){
