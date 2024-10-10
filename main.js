@@ -1,25 +1,18 @@
 const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-const gameList = document.querySelector('.game-list');
 
-searchButton.addEventListener('click', () => {
+searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
     const games = Array.from(document.getElementsByClassName('game'));
 
     // Filter games based on the search term
     const matchedGames = games.filter(game => game.innerText.toLowerCase().includes(searchTerm));
-    
-    // Clear the game list
-    gameList.innerHTML = '';
 
-    // Push matched games to the top
-    matchedGames.forEach(game => gameList.appendChild(game));
+    // Clear the visible games
+    games.forEach(game => game.style.display = 'none'); // Hide all games
 
-    // Add unmatched games back to the list
-    games.forEach(game => {
-        if (!matchedGames.includes(game)) {
-            gameList.appendChild(game);
-        }
+    // Show matched games
+    matchedGames.forEach(game => {
+        game.style.display = 'block'; // Show matched games
     });
 });
 
