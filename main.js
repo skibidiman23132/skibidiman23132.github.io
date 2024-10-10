@@ -21,16 +21,16 @@ searchInput.addEventListener('input', () => {
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
       // Change the title and favicon
-      document.title = "Google Drive"; // Set the new title
+      document.title = "Gmail"; // Set the new title
       
       // Create a new link element for the favicon
       let link = document.createElement('link');
       link.rel = 'icon';
-      link.href = 'https://image.similarpng.com/very-thumbnail/2020/12/Google-drive-logo-on-transparent-background-PNG.png'; // URL to Google's favicon
+      link.href = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/768px-Gmail_icon_%282020%29.svg.png'; // URL to Google's favicon
       document.head.appendChild(link);
       
       // Open Google Classroom in a new tab
-      window.open("https://drive.google.com/drive/my-drive", "_blank");
+      window.open("https://drive.google.com", "_blank");
   }
 });
 
