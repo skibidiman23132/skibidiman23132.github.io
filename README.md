@@ -1,6 +1,8 @@
 > # **Hi** [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnintendoboi22.github.io%2Fpancake.pookie.apple%2F&count_bg=%23AF11F6&title_bg=%235C5C5C&icon=github.svg&icon_color=%23AF11F6&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 ![🥵](spicey.png)
 
+# **MY SITE DONE GOT BANNED, AT MY SCHOOL**
+![RAHHHH](https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/66b3ea1dcffcb68152a70549_50.png)
 > # TODO list
 -  **Add more games**
 
@@ -27,7 +29,8 @@
         - [Landfall](https://landfall.se/clustertruck)
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
-- **Im sorry but im too lazy too add anymore credits :(**
+  - **Unlisted Games**
+        -[I(and future partners) do not take credit for the games in this website, they are not created or made by us]
 - *pls dont sue me 🥺*
 
 > # Links
