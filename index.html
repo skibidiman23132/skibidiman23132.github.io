@@ -3,108 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameHub</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>GameHub - Quick Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+        }
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .game-link {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .game-link:hover {
+            transform: translateY(-5px);
+            background-color: #3a3a3a;
+        }
+        a {
+            color: #4ecdc4;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">GameHub</div>
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search games...">
-                <button>Search</button>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">New Games</a></li>
-                <li><a href="#">Popular</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="featured-games">
-            <h2>Featured Games</h2>
-            <div class="game-grid">
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.cookie.clciker.github.io" target="_blank">
-                        <img src="cookie-clicker.jpg" alt="Cookie Clicker">
-                        <h3>Cookie Clicker</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.1v1.lol.github.io" target="_blank">
-                        <img src="1v1-lol.jpg" alt="1v1 LOL">
-                        <h3>1v1 LOL</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.craft.mine.github.io" target="_blank">
-                        <img src="craft-mine.jpg" alt="Craft Mine">
-                        <h3>Craft Mine</h3>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="all-games">
-            <h2>All Games</h2>
-            <div class="game-grid">
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.flappy.bird.github.io" target="_blank">
-                        <img src="flappy-bird.jpg" alt="Flappy Bird">
-                        <h3>Flappy Bird</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.retro.bowl.github.io/" target="_blank">
-                        <img src="retro-bowl.jpg" alt="Retro Bowl">
-                        <h3>Retro Bowl</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.SM64.github.io" target="_blank">
-                        <img src="super-mario-64.jpg" alt="Super Mario 64">
-                        <h3>Super Mario 64</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.BTD5.github.io" target="_blank">
-                        <img src="btd5.jpg" alt="BTD 5">
-                        <h3>Bloons TD 5</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.basketball.stars.github.io" target="_blank">
-                        <img src="basketball-stars.jpg" alt="Basketball Stars">
-                        <h3>Basketball Stars</h3>
-                    </a>
-                </div>
-                <div class="game-card">
-                    <a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.geometrydash.github.io" target="_blank">
-                        <img src="geometry-dash.jpg" alt="Geometry Dash">
-                        <h3>Geometry Dash</h3>
-                    </a>
-                </div>
-                <!-- Add more game cards as needed -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-links">
-            <a href="#">About Us</a>
-            <a href="https://nintendoboi22.github.io/licence-stuff/contact" target="_blank">Contact</a>
-            <a href="https://nintendoboi22.github.io/licence-stuff/PrivatePolicy" target="_blank">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-        </div>
-        <div class="social-links">
-            <a href="https://discord.gg/KAxqmAjTsm" target="_blank">Join our Discord</a>
-        </div>
-    </footer>
-
-    <script src="main.js"></script>
+    <h1>GameHub Quick Links</h1>
+    <div class="game-grid">
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.cookie.clciker.github.io">Cookie Clicker</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.1v1.lol.github.io">1v1 LOL</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.craft.mine.github.io">Craft Mine</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.flappy.bird.github.io">Flappy Bird</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.retro.bowl.github.io/">Retro Bowl</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.SM64.github.io">Super Mario 64</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.BTD5.github.io">Bloons TD 5</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.basketball.stars.github.io">Basketball Stars</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.geometrydash.github.io">Geometry Dash</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.SM63.github.io">Super Mario 63</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.fnaf2.github.io">FNAF 2 (Modded)</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.Moto.X3M.github.io">Moto X3M</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.RS2.github.io">Riddle School 2</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.jacksmith.github.io">JackSmith</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.papa.louie.github.io">Papa Louie</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.pizza.github.io">Papa's Pizzeria</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.Burrito.Bison.github.io">Burrito Bison</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.chrome.dino.github.io/">Chrome Dino</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.g.snake.github.io">Google Snake</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.evil.glitch.github.io">Evil Glitch</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.bitlife.github.io/index">Bitlife</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.sort.the.court.github.io">Sort the Court</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.rusty.sub.github.io">My Rusty Submarine</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.tanuki.sunset.github.io">Tanuki Sunset</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.oh.flip.github.io">Oh, Flip</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.time.shooter.2github.io">Time Shooter 2</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.time.shooter.3.github.io">Time Shooter 3</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.m.f.github.io">Masked Forces</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.bf.github.io">Bullet Force</a></div>
+        <div class="game-link"><a href="https://nintendoboi22.github.io/chicken.the.sandwich.also.idk.bye.GBA.github.io">GBA Emulator</a></div>
+    </div>
 </body>
 </html>
