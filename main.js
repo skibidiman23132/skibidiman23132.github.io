@@ -1,3 +1,17 @@
+const toggleNewTabWhenLinkPressed = document.getElementById("toggleNewTabWhenLinkPressed");
+
+function updateLinks (toggleNewTabWhenLinkPressed) {
+  const links = document.querySelectorAll("a");
+  links.forEach((link)) => {
+    if (toggleNewTabWhenLinkPressed) {
+      link.removeAttribute("target");
+    } else {
+      link.setAttribute("target", "_blank");
+    }
+  }
+}
+
+
 const searchInput = document.getElementById('search-input');
 
 searchInput.addEventListener('input', () => {
