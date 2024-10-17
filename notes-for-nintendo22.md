@@ -1,1 +1,1 @@
-first i deleted the reset button, second idk where that came from, idk what it even was supposto do
+I added the footer, tell me if i need to add anythigng, also tell me if im missing some games
