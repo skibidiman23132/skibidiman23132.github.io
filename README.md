@@ -1,4 +1,4 @@
-#  NINTENDO READ NOTES
+#  put it on skibidi that you will not push updates yet
 #  NINTENDO READ NOTES
 # NINTENDO READ NOTES
 # NINTENDO READ NOTES
