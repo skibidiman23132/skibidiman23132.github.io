@@ -1,5 +1,4 @@
-#  put it on skibidi that you will not push updates yet
-#  Go BACK AND READ NOTES AGAIN
+#  GO AGAIN AN READ NOTES AGAIN ALR?
 
 
 
