@@ -1,1 +1,3 @@
-ima download all of the games, and put them into the Games folder
+okie, also idk what to add now, gimmie ideas
+
+:
