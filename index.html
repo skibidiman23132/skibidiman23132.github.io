@@ -250,5 +250,24 @@
             <a href="https://nintendoboi22.github.io/licence-stuff/dmca">DMCA</a>
                    <h4>&copy; 2024 Nintendoboi222. Some rights reserved.</h4></center>
                 </footer>
+    <script>
+    let typedWord = '';
+    const targetWord = 'sigma';
+    const link = 'https://www.calm.com/blog/brainrot';
+
+    document.addEventListener('keydown', function(event) {
+        typedWord += event.key.toLowerCase();
+        
+        if (typedWord.includes(targetWord)) {
+            window.open(link, '_blank');
+            typedWord = '';
+        }
+
+        // Reset the typed word if it's longer than the target word
+        if (typedWord.length > targetWord.length) {
+            typedWord = typedWord.slice(-targetWord.length);
+        }
+    });
+</script>
 </body>
 </html>
