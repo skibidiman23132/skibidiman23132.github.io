@@ -1,4 +1,5 @@
 #  GO AGAIN AN READ NOTES AGAIN ALR?
+### no u
 
 
 
@@ -10,7 +11,10 @@
 > # TODO list
 -  **Add more games**
 ---
-[discord](https://discord.gg/KAxqmAjTsm) ?
+-
+- [discord](https://discord.gg/KAxqmAjTsm) ?
+-  [Google WebApp](https://support.google.com/googleplay/work/answer/9147423?hl=en)
+
 ---
 
 > # Game Owners
