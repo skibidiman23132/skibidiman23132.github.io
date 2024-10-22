@@ -256,22 +256,23 @@
                 </footer>
     <script>
     let typedWord = '';
-    const targetWord = 'sigma','skibidi','rizz','alpha','gyatt';
-    const link = 'https://www.calm.com/blog/brainrot';
+const targetWords = ['sigma', 'skibidi', 'rizz', 'alpha', 'gyatt'];
+const link = 'https://www.calm.com/blog/brainrot';
 
-    document.addEventListener('keydown', function(event) {
-        typedWord += event.key.toLowerCase();
-        
-        if (typedWord.includes(targetWord)) {
-            window.open(link, '_blank');
-            typedWord = '';
-        }
+document.addEventListener('keydown', function(event) {
+    typedWord += event.key.toLowerCase();
+    
+    // Check if typedWord contains any of the targetWords
+    if (targetWords.some(word => typedWord.includes(word))) {
+        window.open(link, '_blank');
+        typedWord = '';
+    }
 
-        // Reset the typed word if it's longer than the target word
-        if (typedWord.length > targetWord.length) {
-            typedWord = typedWord.slice(-targetWord.length);
-        }
-    });
-</script>
+    // Reset the typed word if it's longer than the longest target word
+    const maxLength = Math.max(...targetWords.map(word => word.length));
+    if (typedWord.length > maxLength) {
+        typedWord = typedWord.slice(-maxLength);
+    }
+});</script>
 </body>
 </html>
