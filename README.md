@@ -41,9 +41,9 @@
 
 > # Links
 1. **[Main](https://nintendoboi22.github.io/)**
-2. **[Vercel 1](https://nintendoboi22-github-io.vercel.app/)**
-3. **[Vercel 2](https://nintendoboi22-github-io-nintendoboi2s-projects.vercel.app/)**
-4. **[Vercel 3](https://nintendoboi22-github-io-git-main-nintendoboi2s-projects.vercel.app/)**
+2. **[Vercel 1-- Blocked at WMS](https://nintendoboi22-github-io.vercel.app/)**
+3. **[Vercel 2-- Blocked at WMS](https://nintendoboi22-github-io-nintendoboi2s-projects.vercel.app/)**
+4. **[Vercel 3-- Blocked at WMS](https://nintendoboi22-github-io-git-main-nintendoboi2s-projects.vercel.app/)**
   
 > # DMCA
 - **[DMCA, if needed](https://nintendoboi22.github.io/licence-stuff/dmca)**
