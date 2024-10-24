@@ -9,10 +9,9 @@
 
 > # TODO list
 -  **Add more games**
----
--
-- [discord](https://discord.gg/KAxqmAjTsm) ?
 -  [Google WebApp](https://support.google.com/googleplay/work/answer/9147423?hl=en)
+---
+- [discord](https://discord.gg/KAxqmAjTsm) ?
 
 ---
 
@@ -31,8 +30,6 @@
         - [Flipline Studio](https://www.flipline.com/)
 - **There Is No Game**
         - [KaMiZoTo](https://thereisnogame.fandom.com/wiki/Creator)
-- **Cluster Truck**
-        - [Landfall](https://landfall.se/clustertruck)
 - **Wallpaper**
         - [Space wallpaper](https://www.artstation.com/artwork/5B51aW)
   - **Unlisted Games**
