@@ -319,6 +319,7 @@ document.addEventListener('keydown', function(event) {
     
     if (targetWords.some(word => typedWord.includes(word))) {
         window.open(link, '_blank');
+        console.log("Brainroted person detected!");
         typedWord = '';
     }
 
