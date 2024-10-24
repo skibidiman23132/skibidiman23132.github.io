@@ -1,1 +1,1 @@
-[!fish](https://spinning.fish/fish.gif)
+![fish](https://spinning.fish/fish.gif)
