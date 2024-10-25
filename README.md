@@ -1,4 +1,4 @@
-#  NO YOU BOY 
+#  if you see this go to the games repository and into the games to add.txt I did some updated look at it
 
 
 
