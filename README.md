@@ -1,7 +1,7 @@
 #  if you see this go to the games repository and into the games to add.txt I did some updated look at it
-- no you didnt
+also you deletid it i got the first game on the list, i have a rep for it WITH ALL THE FILES DONT WORRY
 #  also can you make it that i can push my own updates pleaseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-- nuh uh
+please
 
 
 
