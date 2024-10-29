@@ -1,1 +1,21 @@
-Uhh im too lazy to add code to make it look nice but instead of useing the redme.md to talk just use this
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk Here</title>
+</head>
+<body>
+    <h1>Talk Here</h1>
+    <input type="text" id="inputText" placeholder="Type something...">
+    <button id="sendButton">Send</button>
+    <div id="displayText"></div>
+
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function() {
+            var text = document.getElementById('inputText').value;
+            document.getElementById('displayText').innerText = text;
+        });
+    </script>
+</body>
+</html>
