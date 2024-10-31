@@ -1,37 +1,3 @@
-const toggleNewTabWhenLinkPressed = document.getElementById("toggleNewTabWhenLinkPressed");
-
-function updateLinks (toggleNewTabWhenLinkPressed) {
-  const links = document.querySelectorAll("a");
-  links.forEach((link)) => {
-    if (toggleNewTabWhenLinkPressed) {
-      link.removeAttribute("target");
-    } else {
-      link.setAttribute("target", "_blank");
-    }
-  }
-}
-
-
-const searchInput = document.getElementById('search-input');
-
-searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.toLowerCase();
-    const games = Array.from(document.getElementsByClassName('game'));
-
-    // Filter games based on the search term
-    const matchedGames = games.filter(game => game.innerText.toLowerCase().includes(searchTerm));
-
-    // Clear the visible games
-    games.forEach(game => game.style.display = 'none'); // Hide all games
-
-    // Show matched games
-    matchedGames.forEach(game => {
-        game.style.display = 'block'; // Show matched games
-    });
-});
-
-
-
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
       // Change the title and favicon
@@ -141,28 +107,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
       splashText();
     });
 });
-
-/*
-auth=[{username:"Student", password:"Lobster"},
- {username:"Owner", password:"Frog"}];
-function checkpassword(username,password,auth){
-return auth.username==username && auth.password==password;
-};
-document.onkeypress = function (e) { if(e.key == "Enter" && login.focus){
-  unlockpage();
-}};
-function unlockpage(){
-      page_cookie.login=true; 
-      document.cookie=JSON.stringify(page_cookie);
-      maincontent.classList.remove("lock");
-      login.classList.add("lock");
-        }
-if (page_cookie.login){unlockpage();}
-button.onclick=()=>{
-      for (let i=0; i<auth.length; i++){
-if (checkpassword(user.value,password.value,auth[i])){
-          unlockpage();
-      }
-    }
-}
-*/
