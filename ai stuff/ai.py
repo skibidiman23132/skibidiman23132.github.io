@@ -2,7 +2,18 @@ import js
 import json
 import os
 from pyodide.ffi import create_proxy
+from flask import Flask,render_template
+import json
 
+app = Flask(__name__)
+
+@app.route("/",methods=["GET"])
+def somthing():
+    return render_template("index.html")
+
+if __name__ =="__main__":
+    app.run()
+    
 chat_data = []  # Initialize empty chat history for the session
 
 def add_message(role, content):
