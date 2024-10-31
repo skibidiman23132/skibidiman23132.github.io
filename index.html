@@ -439,6 +439,8 @@
     let typedWord = '';
         //im so sorry
 const targetWords = ['sigma', 'getout', 'skibidi', 'rizz', 'alpha', 'gyatt', 'ohio', 'mewing', 'goon', 'fanum'];
+const secret = ['ILOVECATS','ilovecats']
+const secretl = '/secret.html'
 const link = 'https://www.calm.com/blog/brainrot';
 
 document.addEventListener('keydown', function(event) {
@@ -449,6 +451,12 @@ document.addEventListener('keydown', function(event) {
         console.log("Brainroted person detected!");
         typedWord = '';
     }
+    else if (secret.some(word => typedWord.includes(word))) {
+        window.open(secretl, '_blank');
+        console.log("Warping to car place");
+        typedWord = '';
+    }
+
 
     const maxLength = Math.max(...targetWords.map(word => word.length));
     if (typedWord.length > maxLength) {
