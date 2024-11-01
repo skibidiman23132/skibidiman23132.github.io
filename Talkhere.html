@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Talk Here</h1>
+    <input type="text" id="userName" placeholder="Your name...">
     <input type="text" id="inputText" placeholder="Type something...">
     <button id="sendButton">Send</button>
     <div id="displayText"></div>
@@ -38,11 +39,13 @@
         }
 
         function sendMessage() {
+            var userName = $('#userName').val();
             var text = $('#inputText').val();
-            appendText(text);
+            var formattedText = `${userName} said ${text}\n`;
+            appendText(formattedText);
 
-            // Save the text to a .txt file
-            saveToGitHub(text + '\n', 'talkhere.txt');
+            // Save the formatted text to a .txt file
+            saveToGitHub(formattedText, 'talkhere.txt');
         }
 
         $('#sendButton').on('click', function() {
