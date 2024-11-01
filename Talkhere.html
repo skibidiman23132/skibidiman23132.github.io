@@ -17,7 +17,7 @@
             const response = await fetch('https://api.github.com/repos/Nintendoboi222/nintendoboi222.github.io/actions/workflows/save_data.yml/dispatches', {
                 method: 'POST',
                 headers: {
-                        'Authorization': `Bearer ${G_TOKEN}`,
+                    'Authorization': `Bearer ${G_TOKEN}`,
                     'Accept': 'application/vnd.github.v3+json',
                     'Content-Type': 'application/json'
                 },
@@ -35,12 +35,22 @@
             }
         }
 
+        function appendText(text) {
+            $('#displayText').append('<p>' + text + '</p>');
+        }
+
         $('#sendButton').on('click', function() {
             var text = $('#inputText').val();
-            $('#displayText').text(text);
+            appendText(text);
 
             // Save the text to a JSON file
             saveToGitHub(text, 'talkhere.json');
+        });
+
+        $('#inputText').on('keypress', function(e) {
+            if (e.which === 13) { // Enter key pressed
+                $('#sendButton').click();
+            }
         });
     </script>
 </body>
