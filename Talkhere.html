@@ -19,14 +19,10 @@
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${G_TOKEN}`,
-                    'Accept': 'application/vnd.github.v3+json',
-                    'Content-Type': 'application/json'
+                    'Accept': 'application/vnd.github.v3.raw+json',
+                    'Content-Type': 'text/plain'
                 },
-                body: JSON.stringify({
-                    message: 'Update talkhere.txt',
-                    content: btoa(data),
-                    sha: window.fileSha // This should be the SHA of the existing file, if it exists
-                })
+                body: data
             });
 
             if (!response.ok) {
@@ -63,7 +59,7 @@
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${G_TOKEN}`,
-                    'Accept': 'application/vnd.github.v3+json'
+                    'Accept': 'application/vnd.github.v3.raw+json'
                 }
             });
 
