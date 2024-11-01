@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talk Here</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h1>Talk Here</h1>
@@ -12,9 +13,34 @@
     <div id="displayText"></div>
 
     <script>
-        document.getElementById('sendButton').addEventListener('click', function() {
-            var text = document.getElementById('inputText').value;
-            document.getElementById('displayText').innerText = text;
+        async function saveToGitHub(data, filename) {
+            const response = await fetch('https://api.github.com/repos/Nintendoboi222/nintendoboi222.github.io/actions/workflows/save_data.yml/dispatches', {
+                method: 'POST',
+                headers: {
+                        'Authorization': `Bearer ${G_TOKEN}`,
+                    'Accept': 'application/vnd.github.v3+json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ref: 'main',
+                    inputs: {
+                        data: data,
+                        filename: filename
+                    }
+                })
+            });
+
+            if (!response.ok) {
+                console.error('Failed to save data', await response.text());
+            }
+        }
+
+        $('#sendButton').on('click', function() {
+            var text = $('#inputText').val();
+            $('#displayText').text(text);
+
+            // Save the text to a JSON file
+            saveToGitHub(text, 'talkhere.json');
         });
     </script>
 </body>
