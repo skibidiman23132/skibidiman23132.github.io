@@ -1,9 +1,4 @@
-#  if you see this go to the games repository and into the games to add.txt I did some updated look at it
-also you deletid it i got the first game on the list, i have a rep for it WITH ALL THE FILES DONT WORRY
-#  also can you make it that i can push my own updates pleaseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-please
-
-nah i need to do a pull request :((((((
+# so this is a site i made because i was bored :P
 
 
 > # **Hi** [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnintendoboi22.github.io%2Fpancake.pookie.apple%2F&count_bg=%23AF11F6&title_bg=%235C5C5C&icon=github.svg&icon_color=%23AF11F6&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
