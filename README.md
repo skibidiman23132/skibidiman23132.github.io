@@ -15,21 +15,21 @@
 > # Game Owners
 
 - [**3KH0**](https://github.com/3kh0/)⬅ INSPIRATION
-#10 Minutes Till Dawn – Flanne, 2022
-1v1.LOL – JustPlay.LOL, 2020
-2048 – Gabriele Cirulli, 2014
-Awesome Tanks – Alexander Gette, 2012
-Awesome Tanks 2 – Alexander Gette, 2013
-Basket Random – RHM Interactive, 2020
-Basketball Stars – Madpuffers, 2019
-BitLife – Candywriter, 2018
-Boxing Random – RHM Interactive, 2019
-BTD (Bloons Tower Defense Series) – Ninja Kiwi, 2007 onward
-Burrito Bison – Juicy Beast, 2011
-Challenge the Runners – (No reliable public information)
-Chrome Dino – Google, 2014
-Cookie Clicker – Orteil, 2013
-Craft Mine – Crafted Games (unverified)
+# 10 Minutes Till Dawn – Flanne, 2022
+# 1v1.LOL – JustPlay.LOL, 2020
+# 2048 – Gabriele Cirulli, 2014
+# Awesome Tanks – Alexander Gette, 2012
+# Awesome Tanks 2 – Alexander Gette, 2013
+# Basket Random – RHM Interactive, 2020
+# Basketball Stars – Madpuffers, 2019
+# BitLife – Candywriter, 2018
+# Boxing Random – RHM Interactive, 2019
+# BTD (Bloons Tower Defense Series) – Ninja Kiwi, 2007 onward
+# Burrito Bison – Juicy Beast, 2011
+# Challenge the Runners – (No reliable public information)
+# Chrome Dino – Google, 2014
+# Cookie Clicker – Orteil, 2013
+# Craft Mine – Crafted Games (unverified)
 Deal or No Deal – Endemol Shine Group, various adaptations since 2005
 Drift Hunters – Studionum43, 2017
 Duck Life Series – Wix Games, 2008 onward
