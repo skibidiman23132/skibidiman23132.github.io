@@ -93,4 +93,6 @@
   
 > # DMCA
 - **[DMCA, if needed](https://nintendoboi22.github.io/licence-stuff/dmca)**
-
+---
+> ## Font Licence
+- **[Orbitron](https://fonts.google.com/specimen/Orbitron/license?categoryFilters=Appearance:%2FTheme%2FTechno)**
