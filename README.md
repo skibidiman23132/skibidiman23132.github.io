@@ -92,7 +92,7 @@
 3. **[Redesign](https://nintendoboi222.github.io/redesign-test)**
   
 > # DMCA
-- **[DMCA, if needed](https://nintendoboi22.github.io/licence-stuff/dmca)**
+- **[DMCA, if needed](https://nintendoboi222.github.io/licence-stuff/dmca)**
 ---
 > ## Font Licence
 - **[Orbitron](https://fonts.google.com/specimen/Orbitron/license?categoryFilters=Appearance:%2FTheme%2FTechno)**
