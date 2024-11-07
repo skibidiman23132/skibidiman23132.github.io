@@ -47,7 +47,7 @@ var says = [
   "mb for not adding more games",
   "U a Bot",
   "Fish Tacos",
-  "Now serving 69 ish games🦖",
+  "Now serving 100 ish games🦖",
   "yes its open-source, dummy",
   "papas pizzaaaaaaaaaaaa",
   "IM NOT ADDING SKBITY TOLIET",
@@ -77,7 +77,7 @@ var says = [
   "i made this on the weekend :((((",
   "hiiii sennon :)",
   "amog",
-  "💀", 
+  "💀"
 ];
 
 function splashText() {
