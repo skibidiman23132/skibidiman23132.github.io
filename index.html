@@ -8,14 +8,25 @@
     ];
 
     let currentIndex = 0;
+    let intervalId;
 
     function changeSiteName() {
-        document.title = siteNames[currentIndex]; // Change the site title
-        currentIndex = (currentIndex + 1) % siteNames.length; // Loop back to the start if needed
+        document.title = siteNames[currentIndex]; // asda
+        currentIndex = (currentIndex + 1) % siteNames.length; // Lasdsad
     }
 
-    setInterval(changeSiteName, 100); // Change site name every 1 second
+    // hi
+    intervalId = setInterval(changeSiteName, 100); // Change site name every 100 milliseconds
+
+    // hallo
+    document.addEventListener('keydown', function(event) {
+        if (event.key.toLowerCase() === 'q') {
+            clearInterval(intervalId); //hoi
+            document.title = "Gmail"; // kdj
+        }
+    });
 </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nintendoboi222</title>
