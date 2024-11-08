@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+    const siteNames = [
+        "NIntendoboi22", "NIntendoboi222", "NIntendoboi2222", "NIntendoboi2222", 
+        "NIntendoboi22222", "NIntendoboi2", "NIntendoboi"
+    ];
+
+    let currentIndex = 0;
+
+    function changeSiteName() {
+        document.title = siteNames[currentIndex]; // Change the site title
+        currentIndex = (currentIndex + 1) % siteNames.length; // Loop back to the start if needed
+    }
+
+    setInterval(changeSiteName, 1000); // Change site name every 1 second
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nintendoboi222</title>
