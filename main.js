@@ -33,7 +33,6 @@ var says = [
   "2.2k ish GOOGLE CLICKS RAHHHHHH",
   "parents aprove(trust)",
   "Press R",
-  "shes says shes from the islands",
   "mersker mersker",
   "papa louie better be paying me double for the amount of work im doing",
   "erm what the sigma",
@@ -57,7 +56,6 @@ var says = [
   "Theres a proxy site, i think",
   "TACOS",
   "whats up brothers",
-  //"soory bout the ads :(",
   "is this websites trash?", 
   "i took too long making this :(", 
   "AOSUDHASIUD4u3ghiuj34hgi34gH",
@@ -77,7 +75,7 @@ var says = [
   "i made this on the weekend :((((",
   "hiiii sennon :)",
   "amog",
-  "💀"
+  "💀",
 ];
 
 function splashText() {
