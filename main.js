@@ -4,7 +4,7 @@ window.addEventListener("keydown", function (e) {
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
     link.rel = 'icon';
-    link.href = 'https://github.com/Nintendoboi222/nintendoboi222.github.io/blob/36cb79dd997be2230721ee856d79abc36d4b0d4b/gmail-logo.png';
+    link.href = 'https://raw.githubusercontent.com/Nintendoboi222/nintendoboi222.github.io/main/gmail-logo.png';
     document.getElementsByTagName('head')[0].appendChild(link);
   }
 });
