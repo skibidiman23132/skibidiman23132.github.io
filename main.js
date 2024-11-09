@@ -1,16 +1,11 @@
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
-      // Change the title and favicon
-      document.title = "Inbox (4)"; // Set the new title
-      
-      // Create a new link element for the favicon
-      let link = document.createElement('link');
-      link.rel = 'icon';
-      link.href = 'https://github.com/Nintendoboi222/nintendoboi222.github.io/blob/36cb79dd997be2230721ee856d79abc36d4b0d4b/gmail-logo.png'; // URL to Google's favicon
-      document.head.appendChild(link);
-      
-      // Open Google drive in a new tab
-      window.open("https://drive.google.com", "_blank");
+    // Change the favicon
+    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'icon';
+    link.href = 'https://github.com/Nintendoboi222/nintendoboi222.github.io/blob/36cb79dd997be2230721ee856d79abc36d4b0d4b/gmail-logo.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
 });
 
