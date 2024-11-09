@@ -1,10 +1,10 @@
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
-    // Change the favicon
+    // Change the favicon so uhh ya
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
     link.rel = 'icon';
-    link.href = 'https://raw.githubusercontent.com/Nintendoboi222/nintendoboi222.github.io/main/gmail-logo.png';
+    link.href = 'https://raw.githubusercontent.com/Nintendoboi222/nintendoboi222.github.io/main/gmail-logo.png?' + new Date().getTime();
     document.getElementsByTagName('head')[0].appendChild(link);
   }
 });
