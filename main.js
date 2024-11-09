@@ -5,10 +5,10 @@ window.addEventListener("keydown", function (e) {
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
     link.rel = 'icon';
-    link.href = 'https://raw.githubusercontent.com/Nintendoboi222/nintendoboi222.github.io/main/gmail-logo.png?' + new Date().getTime();
+    link.href = '/gmail-logo.png?';
     document.getElementsByTagName('head')[0].appendChild(link);
-    window.open("https://drive.google.com", "_blank");
-  }
+  }    window.open("https://drive.google.com", "_blank");
+
 });
 
 
