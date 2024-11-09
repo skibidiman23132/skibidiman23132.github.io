@@ -3,28 +3,43 @@
 <head>
     <script>
     const siteNames = [
-        "NIntendoboi22", "NIntendoboi222", "NIntendoboi2222", "NIntendoboi2222", 
-        "NIntendoboi22222", "NIntendoboi2", "NIntendoboi"
-    ];
+    "Nintendoboi",
+    "Nintendoboi2", 
+    "Nintendoboi22",
+    "Nintendoboi222", 
+    "Nintendoboi2222",
+    "Nintendoboi22222",
+    "Nintendoboi222222"
+];
 
-    let currentIndex = 0;
-    let intervalId;
+let currentIndex = 0;
+let goingForward = true;
+let intervalId;
 
-    function changeSiteName() {
-        document.title = siteNames[currentIndex]; // asda
-        currentIndex = (currentIndex + 1) % siteNames.length; // Lasdsad
-    }
-
-    // hi
-    intervalId = setInterval(changeSiteName, 100); // Change site name every 100 milliseconds
-
-    // hallo
-    document.addEventListener('keydown', function(event) {
-        if (event.key.toLowerCase() === 'q') {
-            clearInterval(intervalId); //hoi
-            document.title = "Gmail"; // kdj
+function changeSiteName() {
+    document.title = siteNames[currentIndex];
+    
+    if (goingForward) {
+        currentIndex++;
+        if (currentIndex >= siteNames.length - 1) {
+            goingForward = false;
         }
-    });
+    } else {
+        currentIndex--;
+        if (currentIndex <= 0) {
+            goingForward = true;
+        }
+    }
+}
+
+intervalId = setInterval(changeSiteName, 100);
+
+document.addEventListener('keydown', function(event) {
+    if (event.key.toLowerCase() === 'q') {
+        clearInterval(intervalId);
+        document.title = "Gmail";
+    }
+});
 </script>
 
     <meta charset="UTF-8">
