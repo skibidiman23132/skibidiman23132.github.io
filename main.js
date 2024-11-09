@@ -6,7 +6,7 @@ window.addEventListener("keydown", function (e) {
       // Create a new link element for the favicon
       let link = document.createElement('link');
       link.rel = 'icon';
-      link.href = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-gmail-icon-google-logo-with-gmail-blue-red-green-8021386%2F&psig=AOvVaw2RqEidN1bZlGvXZgltTmES&ust=1731209857148000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjbnL2pzokDFQAAAAAdAAAAABAE'; // URL to Google's favicon
+      link.href = 'https://banner2.cleanpng.com/20240403/iyp/transparent-gmail-icon-google-logo-with-gmail-blue-red-green660d02d2a62dd6.40239800.webp'; // URL to Google's favicon
       document.head.appendChild(link);
       
       // Open Google drive in a new tab
