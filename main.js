@@ -1,5 +1,6 @@
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
+    window.open("https://drive.google.com", "_blank");
     // Change the favicon so uhh ya
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
