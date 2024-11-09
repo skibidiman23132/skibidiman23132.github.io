@@ -15,9 +15,7 @@ document.onkeydown = function (e) {
   if (e.key === "Enter") {
       splashText();
   }
-};document.querySelector('button').addEventListener('click', () => {
-  while (true) {}
-});
+};
 
 var says = [
   "yes,i did steal this from railing",
