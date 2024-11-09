@@ -7,7 +7,7 @@ window.addEventListener("keydown", function (e) {
     link.rel = 'icon';
     link.href = '/gmail-logo.png?';
     document.getElementsByTagName('head')[0].appendChild(link);
-  }    window.open("https://www.clever.com/", "_blank");
+  }    window.open("https://www.drive.google.com/", "_blank");
 
 });
 
