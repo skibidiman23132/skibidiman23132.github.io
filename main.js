@@ -12,7 +12,7 @@ window.addEventListener("keydown", function (e) {
 
 document.onkeydown = function (e) {
   if (e.key === "Enter") {
-    splashText();
+      splashText();
   }
 };
 
