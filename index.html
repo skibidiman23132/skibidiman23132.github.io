@@ -609,15 +609,83 @@ document.addEventListener('keydown', function(event) {
     }
 });
 </script>
-
-    
-<script src="main.js"></script>
-    <!-- Settings Icon -->
-<div class="settings-icon" onclick="toggleSidebar()">⚙️</div>
-
-<!-- Sidebar -->
-<div id="sidebar" class="sidebar">
-    <a href="#">Settings</a>
 </div>
+    <!-- Sidebar HTML and CSS -->
+<div id="sidebar">
+  <h2>Settings</h2>
+  <label>
+    <input type="checkbox"> Dark Mode
+  </label>
+  <label>
+    <input type="checkbox"> Notifications
+  </label>
+  <label>
+    <input type="checkbox"> Sound
+  </label>
+  <button id="closeBtn">Close</button>
+</div>
+
+<!-- Sidebar Toggle Button -->
+<button id="openBtn">Settings</button>
+
+<!-- Inline CSS for the sidebar -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  #sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #sidebar h2 {
+    margin-top: 0;
+  }
+
+  #sidebar label {
+    display: block;
+    margin: 15px 0;
+  }
+
+  #openBtn, #closeBtn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+  }
+
+  #openBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+  #closeBtn {
+    margin-top: 20px;
+  }
+</style>
+
+<!-- Inline JavaScript to handle sidebar toggle -->
+<script>
+  document.getElementById("openBtn").addEventListener("click", function() {
+    document.getElementById("sidebar").style.left = "0";
+  });
+
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    document.getElementById("sidebar").style.left = "-250px";
+  });
+</script>
+
 </body>
 </html>
