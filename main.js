@@ -7,15 +7,12 @@ window.addEventListener("keydown", function (e) {
     link.rel = 'icon';
     link.href = '/gmail-logo.png?';
     document.getElementsByTagName('head')[0].appendChild(link);
-  }    window.open("https://www.drive.google.com/", "_blank");
-
+  }
 });
-
-
 
 document.onkeydown = function (e) {
   if (e.key === "Enter") {
-      splashText();
+    splashText();
   }
 };
 
