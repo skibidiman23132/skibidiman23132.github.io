@@ -610,7 +610,7 @@ document.addEventListener('keydown', function(event) {
 });
 </script>
 </div>
-    <!-- Sidebar HTML and CSS -->
+  <!-- Sidebar HTML and CSS -->
 <div id="sidebar">
   <h2>Settings</h2>
   <label>
@@ -680,10 +680,12 @@ document.addEventListener('keydown', function(event) {
 <script>
   document.getElementById("openBtn").addEventListener("click", function() {
     document.getElementById("sidebar").style.left = "0";
+    document.getElementById("openBtn").style.display = "none";
   });
 
   document.getElementById("closeBtn").addEventListener("click", function() {
     document.getElementById("sidebar").style.left = "-250px";
+    document.getElementById("openBtn").style.display = "block";
   });
 </script>
 
