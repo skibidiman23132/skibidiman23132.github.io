@@ -23,7 +23,14 @@ const siteNames = [
         "Nintendoboi222", 
         "Nintendoboi2222",
         "Nintendoboi22222",
-        "Nintendoboi222222"
+        "Nintendoboi222222",
+        "Nintendoboi2222222",
+        "Nintendoboi22222222",
+        "Nintendoboi222222222",
+        "Nintendoboi2222222222",
+        "Nintendoboi22222222222",
+        "Nintendoboi222222222222",
+        "Nintendoboi2222222222222"
     ];
     
     let currentIndex = 0;
