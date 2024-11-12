@@ -23,7 +23,7 @@ var says = [
   "DMCA, no more minecraft :(",
   "hello australians",
   "Updated once in a while",
-  "2.2k ish GOOGLE CLICKS RAHHHHHH",
+  "2.8k ish GOOGLE CLICKS RAHHHHHH",
   "parents aprove(trust)",
   "Press the weird squiggly line",
   "The Snack That Smiles Back",

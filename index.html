@@ -2,48 +2,10 @@
 <html lang="en">
 <head>
     <script>
-        function stopsitenamething() {
-        clearInterval(intervalId)
-        document.title = "Nintendoboi222";
-        }
-    </script>
-    <script>
         function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     sidebar.classList.toggle('open');
 }
-
-    const siteNames = [
-    "Nintendoboi2", 
-    "Nintendoboi22",
-    "Nintendoboi222", 
-    "Nintendoboi2222",
-    "Nintendoboi22222",
-    "Nintendoboi222222"
-];
-
-let currentIndex = 0;
-let goingForward = true;
-let intervalId;
-
-function changeSiteName() {
-    document.title = siteNames[currentIndex];
-    
-    if (goingForward) {
-        currentIndex++;
-        if (currentIndex >= siteNames.length - 1) {
-            goingForward = false;
-        }
-    } else {
-        currentIndex--;
-        if (currentIndex <= 0) {
-            goingForward = true;
-        }
-    }
-}
-
-intervalId = setInterval(changeSiteName, 1000);
-
 </script>
 <!--    cookies!    -->
     <script>
@@ -92,6 +54,8 @@ intervalId = setInterval(changeSiteName, 1000);
         });
     });
 </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="titlestuff.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nintendoboi222</title>
@@ -120,152 +84,7 @@ intervalId = setInterval(changeSiteName, 1000);
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
 <meta name="twitter:card" content="summary_large_image">
     
-    <style>
-        .switch {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #fff;
-}
-        .game-link {
-    background-color: #2a2a2a;
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    border: 2px solid #949494; 
-}
-        body {
-            background-color: #1a1a1a;
-            font-family: "Oxanium";
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #379cf4;
-            font-weight: bold;
-        }
-        h3 {
-            text-align: center;
-            color: #379cf4;
-            font-weight: bold;
-        }
-        h2 {
-            text-align: center;
-            color: #379cf4;
-            font-weight: bold;
-        }
-        .search-container {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #379cf4;
-        }
-        #searchBar {
-            width: 50%;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            background-color: #3a3a3a;
-            color: #379cf4;
-        }
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 40px;
-        }
-        .game-link {
-            background-color: #2a2a2a;
-            border-radius: 10px;
-            padding: 16px;
-            text-align: center;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        .game-link:hover {
-            transform: translateY(-5px);
-            background-color: #3a3a3a;
-
-        }
-        .game-link-other {
-            background-color: #2a2a2a;
-            border-radius: 7px;
-            padding: 14px;
-            text-align: center;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        .game-link-other:hover {
-            transform: translateY(-5px);
-            background-color: #3a3a3a;
-
-        }
-        a {
-            color: #674bc3;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: bold;
-            display: block;
-        }
-       footer a {
-    display: inline;
-    text-align: center;
-    color: #379cf4;
-    margin-right: 10px; 
-}
-    </style>
+   
     <script>
     function searchgames() {
         var input, filter, games, i, txtValue;
@@ -720,21 +539,20 @@ document.addEventListener('keydown', function(event) {
   <span class="slider"></span>
   <br>Dark Mode<br>
 </label>
-  <!--
   <label class="switch">
     <input type="checkbox">
     <span class="slider"></span>
-    Notifications<br>-->
+    Notifications<br>
     <br><label class="switch">
     <input type="checkbox" onclick="stopsitenamething()">
     <span class="slider"></span>
       <br>Stop Site Name Change Thing<br>
   </label>
-  <!--<label class="switch">
+  <label class="switch">
     <input type="checkbox">
     <span class="slider"></span>
     Sound<br>
-  </label>-->
+  </label>
   <button id="closeBtn">Close</button>
 </div>
 
@@ -755,170 +573,7 @@ document.addEventListener('keydown', function(event) {
   }
 </script>
 
-<style>
-  .dark-mode {
-    background-color: #1a1a1a;
-    color: #ffffff;
-  }
-</style>
-<!-- Inline CSS for the sidebar, slider switches, and draggable button -->
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-
-  #sidebar {
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    transition: 0.3s;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  #sidebar h2 {
-    margin-top: 0;
-  }
-
-  .switch {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px 0;
-    color: white;
-  }
-
-  /* Slider Switch Style */
-  .switch input {
-    display: none;
-  }
-
-  .slider {
-    position: relative;
-    width: 40px;
-    height: 20px;
-    background-color: #ccc;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .slider:before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
-    transition: transform 0.3s;
-  }
-
-  .switch input:checked + .slider {
-    background-color: #4CAF50;
-  }
-
-  .switch input:checked + .slider:before {
-    transform: translateX(20px);
-  }
-
-  #openBtn, #closeBtn {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #444;
-    color: white;
-    border: none;
-  }
-
-  #openBtn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-  }
-
-  #closeBtn {
-    margin-top: 20px;
-  }
-</style>
-
-<!-- Inline JavaScript for sidebar toggle and draggable functionality -->
-<script>
-  // Toggle sidebar visibility
-  document.getElementById("openBtn").addEventListener("click", function() {
-    document.getElementById("sidebar").style.left = "0";
-    document.getElementById("openBtn").style.display = "none";
-  });
-
-  document.getElementById("closeBtn").addEventListener("click", function() {
-    document.getElementById("sidebar").style.left = "-250px";
-    document.getElementById("openBtn").style.display = "block";
-  });
-
-  // Make the Settings button draggable
-  const openBtn = document.getElementById("openBtn");
-  openBtn.onmousedown = function(event) {
-    event.preventDefault();
-    
-    let shiftX = event.clientX - openBtn.getBoundingClientRect().left;
-    let shiftY = event.clientY - openBtn.getBoundingClientRect().top;
-
-    document.onmousemove = function(event) {
-      openBtn.style.left = event.clientX - shiftX + 'px';
-      openBtn.style.top = event.clientY - shiftY + 'px';
-    };
-
-    document.onmouseup = function() {
-      document.onmousemove = null;
-      document.onmouseup = null;
-
-      // Snap to closest corner
-      const btnRect = openBtn.getBoundingClientRect();
-      const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
-      const margin = 10; // Margin from screen edges
-
-      // Determine the closest corner
-      const distances = {
-        topLeft: btnRect.top + btnRect.left,
-        topRight: btnRect.top + (viewportWidth - btnRect.right),
-        bottomLeft: (viewportHeight - btnRect.bottom) + btnRect.left,
-        bottomRight: (viewportHeight - btnRect.bottom) + (viewportWidth - btnRect.right),
-      };
-
-      // Find the minimum distance and snap to that corner
-      const closestCorner = Object.keys(distances).reduce((a, b) => distances[a] < distances[b] ? a : b);
-      switch (closestCorner) {
-        case 'topLeft':
-          openBtn.style.left = margin + 'px';
-          openBtn.style.top = margin + 'px';
-          break;
-        case 'topRight':
-          openBtn.style.left = (viewportWidth - btnRect.width - margin) + 'px';
-          openBtn.style.top = margin + 'px';
-          break;
-        case 'bottomLeft':
-          openBtn.style.left = margin + 'px';
-          openBtn.style.top = (viewportHeight - btnRect.height - margin) + 'px';
-          break;
-        case 'bottomRight':
-          openBtn.style.left = (viewportWidth - btnRect.width - margin) + 'px';
-          openBtn.style.top = (viewportHeight - btnRect.height - margin) + 'px';
-          break;
-      }
-    };
-  };
-
-  openBtn.ondragstart = function() {
-    return false;
-  };
-</script>
+<script src="titlestuff.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
