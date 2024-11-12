@@ -1,16 +1,3 @@
-window.addEventListener("keydown", function (e) {
-  if (e.key === "q" || e.key === "Q") {
-    document.title = "Inbox (4)";
-    window.open("https://drive.google.com", "_blank");
-    // Change the favicon so uhh ya
-    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/png';
-    link.rel = 'icon';
-    link.href = 'images/gmail-logo.png?';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  }
-});
-
 document.onkeydown = function (e) {
   if (e.key === "Enter") {
       splashText();
