@@ -4,7 +4,7 @@ window.addEventListener("keydown", function (e) {
     // Change the favicon so uhh ya
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
-    link.rel = splashText'icon';
+    link.rel = 'icon';
     link.href = 'images/gmail-logo.png?';
     document.getElementsByTagName('head')[0].appendChild(link);
   }
