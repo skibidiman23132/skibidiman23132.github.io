@@ -8,7 +8,6 @@
 }
 
     const siteNames = [
-    "Nintendoboi",
     "Nintendoboi2", 
     "Nintendoboi22",
     "Nintendoboi222", 
@@ -40,7 +39,53 @@ function changeSiteName() {
 intervalId = setInterval(changeSiteName, 1000);
 
 </script>
+<!--    cookies!    -->
+    <script>
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
 
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        document.cookie = name + '=; Max-Age=-99999999;';
+    }
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const darkMode = getCookie('darkMode');
+
+        if (darkMode === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+
+        darkModeToggle.addEventListener('change', function () {
+            if (this.checked) {
+                document.body.classList.add('dark-mode');
+                setCookie('darkMode', 'enabled', 365);
+            } else {
+                document.body.classList.remove('dark-mode');
+                setCookie('darkMode', 'disabled', 365);
+            }
+        });
+    });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nintendoboi222</title>
@@ -70,6 +115,63 @@ intervalId = setInterval(changeSiteName, 1000);
 <meta name="twitter:card" content="summary_large_image">
     
     <style>
+        .switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
         .game-link {
     background-color: #2a2a2a;
     border-radius: 10px;
@@ -605,30 +707,54 @@ document.addEventListener('keydown', function(event) {
     }
 });
 </script>
-<!-- Sidebar HTML and CSS -->
 <div id="sidebar">
   <h2>Settings</h2>
   <label class="switch">
-    <input type="checkbox">
-    <span class="slider"></span>
-    Dark Mode
-  </label>
+  <input type="checkbox" id="dark-mode-toggle" checked>
+  <span class="slider"></span>
+  Dark Mode
+</label>
+  <!--
   <label class="switch">
     <input type="checkbox">
     <span class="slider"></span>
-    Notifications
-  </label>
+    Notifications-->
   <label class="switch">
+    <input type="checkbox" onclick="clearInterval(intervalId)">
+    <span class="slider"></span>
+      Stop Site Name Change Thing
+  </label>
+  <!--<label class="switch">
     <input type="checkbox">
     <span class="slider"></span>
     Sound
-  </label>
+  </label>-->
   <button id="closeBtn">Close</button>
 </div>
 
 <!-- Draggable Sidebar Toggle Button -->
 <button id="openBtn">Settings</button>
+<script>
+  document.getElementById('darkModeToggle').addEventListener('change', function() {
+    if (this.checked) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  });
 
+  // Ensure the dark mode is enabled on page load
+  if (document.getElementById('darkModeToggle').checked) {
+    document.body.classList.add('dark-mode');
+  }
+</script>
+
+<style>
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+</style>
 <!-- Inline CSS for the sidebar, slider switches, and draggable button -->
 <style>
   body {
