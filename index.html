@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <script>
+        function stopsitenamething() {
+        clearInterval(intervalId)
+        document.title = "Nintendoboi222"  
+        }
+    </script>
+    <script>
         function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     sidebar.classList.toggle('open');
@@ -708,26 +714,26 @@ document.addEventListener('keydown', function(event) {
 });
 </script>
 <div id="sidebar">
-  <h2>Settings</h2>
+  <h2>Settings</h2><br>
   <label class="switch">
   <input type="checkbox" id="dark-mode-toggle" checked>
   <span class="slider"></span>
-  Dark Mode
+  Dark Mode<br>
 </label>
   <!--
   <label class="switch">
     <input type="checkbox">
     <span class="slider"></span>
-    Notifications-->
+    Notifications<br>-->
   <label class="switch">
-    <input type="checkbox" onclick="clearInterval(intervalId)">
+    <input type="checkbox" onclick="stopsitenamething()">
     <span class="slider"></span>
-      Stop Site Name Change Thing
+      Stop Site Name Change Thing<br>
   </label>
   <!--<label class="switch">
     <input type="checkbox">
     <span class="slider"></span>
-    Sound
+    Sound<br>
   </label>-->
   <button id="closeBtn">Close</button>
 </div>
