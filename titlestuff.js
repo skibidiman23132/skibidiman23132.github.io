@@ -15,7 +15,8 @@ window.addEventListener("keydown", function (e) {
   }
 });
 
-const siteNames = [ 
+const siteNames = [
+    " ",
     "N", 
     "Ni", 
     "Nin", 
