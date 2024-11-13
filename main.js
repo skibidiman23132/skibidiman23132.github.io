@@ -5,7 +5,7 @@ document.onkeydown = function (e) {
 };
 
 var says = [
-  "yes,i did steal this from railing",
+  "yes, i did steal this from railing",
   "shoutout to IdTech",
   "DMCA, no more minecraft :(",
   "hello australians",
