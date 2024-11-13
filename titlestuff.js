@@ -18,6 +18,18 @@ function stopsitenamething() {
  }
    
 const siteNames = [
+        " ", 
+        "N", 
+        "Ni", 
+        "Nin", 
+        "Nint", 
+        "Ninte", 
+        "Ninten", 
+        "Nintend", 
+        "Nintendo", 
+        "Nintendob", 
+        "Nintendobo", 
+        "Nintendoboi", 
         "Nintendoboi2", 
         "Nintendoboi22",
         "Nintendoboi222", 
@@ -30,7 +42,19 @@ const siteNames = [
         "Nintendoboi2222222222",
         "Nintendoboi22222222222",
         "Nintendoboi222222222222",
-        "Nintendoboi2222222222222"
+        "Nintendoboi2222222222222",
+        "Nintendoboi22222222222222",
+        "Nintendoboi222222222222222",
+        "Nintendoboi2222222222222222",
+        "Nintendoboi22222222222222222",
+        "Nintendoboi2222222222222222222",
+        "Nintendoboi22222222222222222222",
+        "Nintendoboi222222222222222222222",
+        "Nintendoboi2222222222222222222222",
+        "Nintendoboi22222222222222222222222",
+        "Nintendoboi222222222222222222222222",
+        "Nintendoboi2222222222222222222222222",
+  
     ];
     
     let currentIndex = 0;
