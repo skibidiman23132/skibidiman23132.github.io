@@ -12,10 +12,10 @@ window.addEventListener("keydown", function (e) {
 });
 
 
-function stopsitenamething() {
-    clearInterval(intervalId)
-    document.title = "Nintendoboi222";
- }
+//function stopsitenamething() {
+//    clearInterval(intervalId)
+//    document.title = "Nintendoboi222";
+// } 
    
 const siteNames = [
         " ", 
