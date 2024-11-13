@@ -1,20 +1,21 @@
+let intervalId; // Declare intervalId in the global scope
+
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
     document.title = "Inbox (4)";
     window.open("https://drive.google.com", "_blank");
-    // Change the favicon so uhh ya
+    
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
     link.rel = 'icon';
     link.href = 'images/gmail-logo.png?';
     document.getElementsByTagName('head')[0].appendChild(link);
 
-    // Stop the changeSiteName function
-    clearInterval(intervalId);
+    clearInterval(intervalId); // Clear the interval
   }
 });
 
-const siteNames = [
+const siteNames = [ 
     " ", 
     "N", 
     "Ni", 
@@ -44,27 +45,25 @@ const siteNames = [
     "Nintendoboi222222222222222",
     "Nintendoboi2222222222222222",
     "Nintendoboi22222222222222222",
-    "Nintendoboi2222222222222222222"
-];
+    "Nintendoboi2222222222222222222" ];
 
 let currentIndex = 0;
 let goingForward = true;
-let intervalId;
 
 function changeSiteName() {
-    document.title = siteNames[currentIndex];
-    
-    if (goingForward) {
-        currentIndex++;
-        if (currentIndex >= siteNames.length - 1) {
-            goingForward = false;
-        }
-    } else {
-        currentIndex--;
-        if (currentIndex <= 0) {
-            goingForward = true;
-        }
+  document.title = siteNames[currentIndex];
+  
+  if (goingForward) {
+    currentIndex++;
+    if (currentIndex >= siteNames.length - 1) {
+      goingForward = false;
     }
+  } else {
+    currentIndex--;
+    if (currentIndex <= 0) {
+      goingForward = true;
+    }
+  }
 }
 
-intervalId = setInterval(changeSiteName, 1000);
+intervalId = setInterval(changeSiteName, 1000); // Assign intervalId
