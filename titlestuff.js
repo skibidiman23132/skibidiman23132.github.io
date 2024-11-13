@@ -1,4 +1,4 @@
-let intervalId; // Declare intervalId in the global scope
+let intervalId;
 
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
@@ -11,7 +11,7 @@ window.addEventListener("keydown", function (e) {
     link.href = 'images/gmail-logo.png?';
     document.getElementsByTagName('head')[0].appendChild(link);
 
-    clearInterval(intervalId); // Clear the interval
+    clearInterval(intervalId); 
   }
 });
 
