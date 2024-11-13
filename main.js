@@ -35,6 +35,8 @@ var says = [
   "what do i add?",
   "*you're* 👆🤓",
   "optimized by ChatGPT",
+  "thanks github!",
+  "github copilot RAHH",
   "Theres a proxy site, i think",
   "TACOS",
   "'ima crash out' - billard",
