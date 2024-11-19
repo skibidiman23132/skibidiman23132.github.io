@@ -3,7 +3,7 @@ let intervalId;
 window.addEventListener("keydown", function (e) {
   if (e.key === "q" || e.key === "Q") {
     document.title = "Inbox (4)";
-    window.open("https://drive.google.com", "_blank");
+    window.location.href = "https://drive.google.com";
     
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
