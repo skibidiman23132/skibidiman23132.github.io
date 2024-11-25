@@ -22,7 +22,6 @@
 > # Links
 1. **[Main](https://nintendoboi22.github.io)**
 2. **[Main 2](https://nintendoboi222.github.io)**
-3. **[Redesign](https://nintendoboi222.github.io/redesign-test)**
   
 > # DMCA
 - **[DMCA, if needed](https://nintendoboi222.github.io/licence-stuff/dmca)**
