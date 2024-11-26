@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   label.className = 'switch';
   span.className = 'slider round';
   darkModeLabel.className = 'dark-mode-label';
-  darkModeLabel.textContent = 'Dark Mode';
+  darkModeLabel.textContent = 'Un Dark Mode';
 
   label.appendChild(toggleSwitch);
   label.appendChild(span);
