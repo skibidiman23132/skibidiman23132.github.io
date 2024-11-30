@@ -31,24 +31,7 @@
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2c0085" />
 <meta name="twitter:card" content="summary_large_image">
     
-   
-    <script>
-    function searchgames() {
-        var input, filter, games, i, txtValue;
-        input = document.getElementById('searchBar');
-        filter = input.value.toUpperCase();
-        games = document.getElementsByClassName('game-link');
-
-        for (i = 0; i < games.length; i++) {
-            txtValue = games[i].textContent || games[i].innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                games[i].style.display = "";
-            } else {
-                games[i].style.display = "none";
-            }
-        }
-    }
-    </script>
+      
 </head>
 <body>
     <h3>(Panic Button, press <kbd>Q</kbd> key)</h3>
