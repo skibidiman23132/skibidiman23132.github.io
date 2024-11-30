@@ -33,7 +33,8 @@
     
    
     <script>
-    function searchgames() {
+    <script>
+function searchgames() {
     var input, filter, games, i, txtValue;
     input = document.getElementById('searchBar');
     filter = input.value.toUpperCase();
@@ -52,21 +53,22 @@
         }
     }
 
-    // hi man
+    // Clear the game grid
     gameGrid.innerHTML = '';
 
-    // Appensd matching games first
+    // Append matching games first
     matchingGames.forEach(function(game) {
         game.style.display = '';
         gameGrid.appendChild(game);
     });
 
-    // hallo this just appends
+    // Append non-matching games
     nonMatchingGames.forEach(function(game) {
         game.style.display = '';
         gameGrid.appendChild(game);
     });
 }
+</script>
     </script>
 </head>
 <body>
