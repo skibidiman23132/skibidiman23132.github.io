@@ -7,9 +7,12 @@ function searchgames() {
 
     // Identify and group matching and non-matching games
     for (i = 0; i < games.length; i++) {
-        txtValue = games[i].querySelector('.game-link').textContent || games[i].querySelector('.game-link').innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            matchingGames.push(games[i]);
+        var gameLink = games[i].querySelector('.game-link'); // Safely get the .game-link child
+        if (gameLink) { // Check if .game-link exists
+            txtValue = gameLink.textContent || gameLink.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                matchingGames.push(games[i]);
+            }
         }
     }
 
