@@ -1,8 +1,8 @@
 function searchgames() {
-    var input, filter, games, i, txtValue;
-    input = document.getElementById('searchBar');
-    filter = input.value.toUpperCase();
-    games = document.getElementsByClassName('game-link');
+    var input = document.getElementById('searchBar');
+    var filter = input.value.toUpperCase();
+    var games = document.getElementsByClassName('game-link');
+    var i, txtValue;
 
     for (i = 0; i < games.length; i++) {
         txtValue = games[i].textContent || games[i].innerText;
