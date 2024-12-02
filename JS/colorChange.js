@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const bgColor = getComputedStyle(element).backgroundColor;
                 const color = getComputedStyle(element).color;
                 if (bgColor === 'rgb(0, 0, 0)') {
-                    element.style.backgroundColor = '#FFFFFF'; // Change black to white
+                    element.style.backgroundColor = '#2c0085'; // Change black to white
                 }
                 if (color === 'rgb(0, 0, 0)') {
                     element.style.color = '#FFFFFF'; // Change black text to white
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const bgColor = getComputedStyle(element).backgroundColor;
                 const color = getComputedStyle(element).color;
                 if (bgColor === 'rgb(255, 255, 255)') {
-                    element.style.backgroundColor = '#000000'; // Change white to black
+                    element.style.backgroundColor = '#2c0085'; // Change white to black
                 }
                 if (color === 'rgb(255, 255, 255)') {
                     element.style.color = '#000000'; // Change white text to black
