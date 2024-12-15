@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+<!-- document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
 
     function changeColors() {
@@ -29,4 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     body.addEventListener('classChange', changeColors);
     changeColors(); // Initial call
-});
+}); --!>
