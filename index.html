@@ -47,67 +47,61 @@
         background-color: var(--game-link-hover);
     }
 
-    .toggle-switch {
-  position: relative;
-  width: 100px;
-  height: 50px;
-  --light: #d8dbe0;
-  --dark: #28292c;
-  --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
+    .theme-switch-wrapper {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .theme-switch {
+        display: inline-block;
+        height: 34px;
+        width: 60px;
+        position: relative;
+    }
+
+    .theme-switch input {
+        display: none;
+    }
+
+    .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+    }
+
+    .slider:before {
+    background-color: #fff;
+    bottom: 4px;        
+    content: "";
+    height: 26px;       
+    left: 4px;         
+    position: absolute;
+    transition: .4s;
+    width: 26px;       
 }
 
-.switch-label {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: var(--dark);
-  border-radius: 25px;
-  cursor: pointer;
-  border: 3px solid var(--dark);
-}
+    input:checked + .slider {
+        background-color: #66b3ff;
+    }
 
-.checkbox {
-  position: absolute;
-  display: none;
-}
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
 
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
+    .slider.round {
+        border-radius: 34px;
+    }
 
-.checkbox:checked ~ .slider {
-  background-color: var(--light);
-}
-
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
-  box-shadow: inset 12px -4px 0px 0px var(--light);
-  background-color: var(--dark);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.checkbox:checked ~ .slider::before {
-  -webkit-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  transform: translateX(50px);
-  background-color: var(--dark);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
+    .slider.round:before {
+        border-radius: 50%;
+    }
   </style>
 
   <meta charset="UTF-8">
@@ -130,12 +124,10 @@
 
 <body>
     <!-- Theme Switcher -->
-    <div class="toggle-switch">
-    <label class="switch-label">
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <span class="slider"></span>
-    </label>
-</div>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
         </label>
     </div>
 
