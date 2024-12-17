@@ -605,7 +605,42 @@ document.addEventListener('keydown', function(event) {
     }
 });
 </script>
-
+    <script>
+        let typedWord = '';
+        const targetWords = ['sigma','hawk','tuah', 'getout', 'skibidi', 'rizz', 'alpha', 'gyatt', 'ohio', 'mewing', 'goon', 'fanum','sus','amongus'];
+        const secret = ['ilovecats'];
+        const RAHHHH = ['idontlovecats','ilovedogs','catssuck','catssuck'];
+        const secretl = '/CAR/secret.html';
+        const RAHHHHl = 'https://medium.com/writing-in-the-media/cats-are-better-than-dogs-even-science-says-so-ca57e815f6d1';
+        const link = 'https://www.calm.com/blog/brainrot';
+        document.addEventListener('keydown', function(event) {
+            const key = event.key.toLowerCase();
+            typedWord += key;
+            
+            console.log(`Typed letter: ${key}`);
+            console.log(`Current typedWord: ${typedWord}`);
+            
+            if (targetWords.some(word => typedWord.includes(word))) {
+                window.open(link, '_blank');
+                console.log("Brainroted person detected!");
+                typedWord = '';
+            }
+            else if (secret.some(word => typedWord.includes(word))) {
+                window.open(secretl, '_blank');
+                console.log("Warping to car place");
+                typedWord = '';
+            }
+            else if (RAHHHH.some(word => typedWord.includes(word))) {
+                window.open(RAHHHHl, '_blank');
+                console.log("GET OUT");
+                typedWord = '';
+            }
+            const maxLength = Math.max(...targetWords.map(word => word.length), ...secret.map(word => word.length));
+            if (typedWord.length > maxLength) {
+                typedWord = typedWord.slice(-maxLength);
+            }
+        });
+    </script>
 <script src="/JS/jquery-3.7.1.min.js"></script>
 <script src="/JS/main.js"></script>
 <script src="/JS/Search.js"></script>
