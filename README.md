@@ -12,7 +12,7 @@
 ---
 
 > # Game Owners
-[credits](https://github.com/Nintendoboi222/games/blob/main/credits.md)
+[credits](https://github.com/skibidiman23132/games/blob/main/credits.md)
 
   - **Unlisted Games**
         -[I(*and future partners*) do not take credit for the games in this website, they are not created or made by us]
@@ -20,10 +20,10 @@
 
 > # Links
 1. **[Main](https://nintendoboi22.github.io)**
-2. **[Main 2](https://nintendoboi222.github.io)**
+2. **[Main 2](https://skibidiman23132.github.io)**
   
 > # DMCA
-- **[DMCA, if needed](https://nintendoboi222.github.io/licence-stuff/dmca)**
+- **[DMCA, if needed](https://skibidiman23132.github.io/licence-stuff/dmca)**
 ---
 > ## Font Licence
 - **[Orbitron](https://fonts.google.com/specimen/Orbitron/license?categoryFilters=Appearance:%2FTheme%2FTechno)**
